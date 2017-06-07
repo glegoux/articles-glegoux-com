@@ -3,11 +3,10 @@
 import csv
 import json
 import multiprocessing
+import logging
 from datetime import datetime, timezone
 
 import requests
-
-import logging
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -45,7 +44,13 @@ def write_csv(values, filename, mode='w'):
         if mode == 'w':
             writer.writeheader()
         writer.writerows(values)
-
+ 
+def read_csv(filename):
+    with open(csv_file) as fname:
+        reader = csv.reader(fname)
+        rows = list(reader)
+        return rows
+            
 class ClientAPIGitHubv3:
 
     def __init__(self):
@@ -79,14 +84,12 @@ class ClientAPIGitHubv3:
         return self
 
     def get_n_users(self, step, csv_file):
-        with open(csv_file) as fname:
-            reader = csv.reader(fname)
-            rows = list(reader)
-            last_n_users = int(rows[-1][0])
-            last_user = self.binary_search(last_n_users, last_n_users + step)
-            last_user = self.parse_result(last_user)
-            write_csv([last_user], CSV_FILE, mode='a')
-            return self
+        rows = read_csv(csv_file)
+        last_n_users = int(rows[-1][0])
+        last_user = self.binary_search(last_n_users, last_n_users + step)
+        last_user = self.parse_result(last_user)
+        write_csv([last_user], CSV_FILE, mode='a')
+        return self
 
     def binary_search(self, first, last):
         last_user_id = first
@@ -115,5 +118,3 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(e)
     logger.info('OK')
-
-
