@@ -17,6 +17,11 @@ def get_tiobe_index(language):
         nonlocal data
         data = match_obj.group(1)
 
+    def format_date(match_obj):
+        return '"{}-{}-{}"'.format(match_obj.group(1),
+                                 int(match_obj.group(2)) + 1,
+                                 match_obj.group(3))
+
     r = requests.get(URL + language)
     bs = BeautifulSoup(r.text, 'html.parser')
 
@@ -24,12 +29,14 @@ def get_tiobe_index(language):
     data = str(data[0])
     data = re.sub('\s+', '', data)
     re.sub("data:(.*)}]", get_data, data)
-    data = re.sub("Date.UTC\(([0-9]{4}),([0-9]{1,2}),([0-9]{1,2})\)", '"\\1-\\2-\\3"', data)
+    data = re.sub("Date.UTC\(([0-9]{4}),([0-9]{1,2}),([0-9]{1,2})\)", format_date, data)
     data = json.loads(data)
     df = pd.DataFrame(data)
     df.columns = ['date', 'ratings']
     df.to_csv(language + '.csv', index=False)
 
-for language in languages:
-    print(language)
-    get_tiobe_index(language)
+if __name__ == "__main__":
+
+    for language in languages:
+        print(language)
+        get_tiobe_index(language)
