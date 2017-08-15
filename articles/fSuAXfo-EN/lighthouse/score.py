@@ -9,8 +9,8 @@ import subprocess
 from urllib.parse import urlparse
 from collections import OrderedDict
 
-import numpy as np
 import pandas as pd
+
 
 class ShellError(Exception):
     pass
@@ -18,11 +18,9 @@ class ShellError(Exception):
 
 def execute_lighthouse(url):
     o = urlparse(url)
-    report_name = o.path[1:].replace('/', '-')
-    if report_name == '':
-        report_name = 'index'
+    report_name = o.path[1:].replace('/', '--')
     hostname = o.hostname
-    cmd = ['lighthouse {} --output=json --output-path=./{}-{}.json'.format(
+    cmd = ['lighthouse {} --output=json --output-path=./{}--{}.json'.format(
                 url,
                 hostname,
                 report_name
@@ -41,6 +39,7 @@ def get_reports(urls_filename):
         except ShellError:
             continue
 
+
 def aggregate_reports(report_filenames, csv_filename):
     scores = list()
     for report_filename in report_filenames:
@@ -55,31 +54,18 @@ def compute_score(report_filename):
     score = dict()
     with open(report_filename, 'r') as desc:
         content_json = json.load(desc)
-    for reportCategory in content_json['reportCategories']:
-        category = reportCategory['id']
-        note = reportCategory['score']
+    score['url'] = content_json.get('url', None)
+    score['date'] = content_json.get('generatedTime', None)
+    for reportCategory in content_json.get('reportCategories', list()):
+        category = reportCategory.get('id', None)
+        note = reportCategory.get('score', None)
         score[category] = note
     return OrderedDict(sorted(score.items(), key=lambda x: x[0]))
-
-
-def stats_score(scores):
-    stats = dict()
-    values = list(scores.values())
-    stats['min'] = min(values)
-    stats['max'] = max(values)
-    stats['avg'] = np.average(values)
-    stats['std'] = np.std(values)
-    ordered_scores = OrderedDict(sorted(scores.items(), key=lambda x: x[1]))
-    stats['categories'] = list(ordered_scores.keys())
-    stats['scores'] = list(ordered_scores.values())
-    return stats
 
 
 if __name__ == "__main__":
     import sys
     import os
-
-    import config
 
     args = sys.argv[1:]
     urls_filename = args[0]
