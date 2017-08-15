@@ -8,7 +8,9 @@
 
 i=0
 for url in $(cat urls.txt); do
-  echo "-- $i) ${url} --"
+  echo -n "--"
+  echo "$i ${url}" | tee -a mathing_url_rapport.txt
+  echo -n "--"
   lighthouse "${url}" --output=json --output-path="rappot-$i.json"
   $((i++))
 done
