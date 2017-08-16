@@ -1,7 +1,7 @@
 {
   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36",
   "lighthouseVersion": "2.4.0",
-  "generatedTime": "2017-08-15T23:19:54.327Z",
+  "generatedTime": "2017-08-16T00:12:43.429Z",
   "initialUrl": "https://glegoux.com/articles/",
   "url": "https://www.glegoux.com/articles/",
   "audits": {
@@ -88,27 +88,27 @@
       "helpText": "Your app should display some content when JavaScript is disabled, even if it's just a warning to the user that JavaScript is required to use the app. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/no-js)."
     },
     "first-meaningful-paint": {
-      "score": 20,
-      "displayValue": "6,090 ms",
-      "rawValue": 6092.3,
+      "score": 0,
+      "displayValue": "27,020 ms",
+      "rawValue": 27020.6,
       "optimalValue": "< 1,600 ms",
       "extendedInfo": {
         "value": {
           "timestamps": {
-            "navStart": 45373117062,
-            "fCP": 45379209353,
-            "fMP": 45379209363,
-            "onLoad": 45382467109,
-            "endOfTrace": 45387822490
+            "navStart": 48527000969,
+            "fCP": 48554021597,
+            "fMP": 48554021606,
+            "onLoad": 48534929083,
+            "endOfTrace": 48557014086
           },
           "timings": {
             "navStart": 0,
-            "fCP": 6092.291,
-            "fMP": 6092.301,
-            "onLoad": 9350.047,
-            "endOfTrace": 14705.428
+            "fCP": 27020.628,
+            "fMP": 27020.637,
+            "onLoad": 7928.114,
+            "endOfTrace": 30013.117
           },
-          "fmpFellBack": false
+          "fmpFellBack": true
         }
       },
       "scoringMode": "numeric",
@@ -118,264 +118,113 @@
       "helpText": "First meaningful paint measures when the primary content of a page is visible. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint)."
     },
     "load-fast-enough-for-pwa": {
-      "score": true,
+      "score": null,
       "displayValue": "",
-      "rawValue": true,
-      "extendedInfo": {
-        "value": {
-          "areLatenciesAll3G": true,
-          "firstRequestLatencies": [
-            {
-              "url": "https://glegoux.com/articles/",
-              "latency": "566.71"
-            },
-            {
-              "url": "https://www.glegoux.com/articles/",
-              "latency": "568.57"
-            },
-            {
-              "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
-              "latency": "589.29"
-            },
-            {
-              "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-              "latency": "597.14"
-            },
-            {
-              "url": "https://www.google-analytics.com/analytics.js",
-              "latency": "567.92"
-            },
-            {
-              "url": "https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-102138582-1&cid=1989265185.1502839181&jid=981667577&_gid=745198566.1502839181&gjid=850386780&_v=j59&z=2111845981",
-              "latency": "568.72"
-            },
-            {
-              "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
-              "latency": "567.77"
-            },
-            {
-              "url": "https://cdn.mathjax.org/mathjax/contrib/a11y/accessibility-menu.js?V=2.7.0",
-              "latency": "568.1"
-            }
-          ],
-          "isFast": true,
-          "timeToFirstInteractive": 9393.943
-        }
-      },
+      "rawValue": null,
+      "error": true,
+      "debugString": "Audit error: trace not at least 5 seconds longer than FMP",
       "scoringMode": "binary",
       "name": "load-fast-enough-for-pwa",
       "category": "PWA",
-      "description": "Page load is fast enough on 3G",
+      "description": "Page load is not fast enough on 3G",
       "helpText": "A fast page load over a 3G network ensures a good mobile user experience. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/fast-3g)."
     },
     "speed-index-metric": {
-      "score": 22,
-      "displayValue": "9,525",
-      "rawValue": 9525,
+      "score": 1,
+      "displayValue": "27,117",
+      "rawValue": 27117,
       "optimalValue": "< 1,250",
       "extendedInfo": {
         "value": {
           "timings": {
-            "firstVisualChange": 9423,
-            "visuallyReady": 9606.892999999225,
-            "visuallyComplete": 9723,
-            "speedIndex": 9667.024140000867,
-            "perceptualSpeedIndex": 9524.81849753695
+            "firstVisualChange": 27056,
+            "visuallyReady": 27370.091000005603,
+            "visuallyComplete": 27654,
+            "speedIndex": 27075.254620002877,
+            "perceptualSpeedIndex": 27117.016917761583
           },
           "timestamps": {
-            "firstVisualChange": 45382540062,
-            "visuallyReady": 45382723955,
-            "visuallyComplete": 45382840062,
-            "speedIndex": 45382784086.14,
-            "perceptualSpeedIndex": 45382641880.497536
+            "firstVisualChange": 48554056969,
+            "visuallyReady": 48554371060,
+            "visuallyComplete": 48554654969,
+            "speedIndex": 48554076223.619995,
+            "perceptualSpeedIndex": 48554117985.91776
           },
           "frames": [
             {
-              "timestamp": 45373117.062,
+              "timestamp": 48527000.969,
               "progress": 0
             },
             {
-              "timestamp": 45379221.004,
-              "progress": 0
+              "timestamp": 48554057.713,
+              "progress": 84.77666954234583
             },
             {
-              "timestamp": 45379538.086,
-              "progress": 0
+              "timestamp": 48554371.06,
+              "progress": 94.6016774494397
             },
             {
-              "timestamp": 45379554.337,
-              "progress": 0
+              "timestamp": 48554387.959,
+              "progress": 94.6016774494397
             },
             {
-              "timestamp": 45379585.795,
-              "progress": 0
+              "timestamp": 48554420.766,
+              "progress": 94.99841234875043
             },
             {
-              "timestamp": 45379602.419,
-              "progress": 0
+              "timestamp": 48554437.715,
+              "progress": 94.99841234875043
             },
             {
-              "timestamp": 45379607.391,
-              "progress": 0
+              "timestamp": 48554454.373,
+              "progress": 94.99841234875043
             },
             {
-              "timestamp": 45379634.74,
-              "progress": 0
+              "timestamp": 48554471.004,
+              "progress": 94.99841234875043
             },
             {
-              "timestamp": 45379648.937,
-              "progress": 0
+              "timestamp": 48554487.608,
+              "progress": 94.99841234875043
             },
             {
-              "timestamp": 45379668.104,
-              "progress": 0
+              "timestamp": 48554504.112,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379687.903,
-              "progress": 0
+              "timestamp": 48554522.07,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379703.971,
-              "progress": 0
+              "timestamp": 48554538.121,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379721.224,
-              "progress": 0
+              "timestamp": 48554555.172,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379738.064,
-              "progress": 0
+              "timestamp": 48554571.833,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379754.265,
-              "progress": 0
+              "timestamp": 48554589.255,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379771.492,
-              "progress": 0
+              "timestamp": 48554605.083,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379788.154,
-              "progress": 0
+              "timestamp": 48554621.741,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379804.178,
-              "progress": 0
+              "timestamp": 48554639.083,
+              "progress": 96.21936538194065
             },
             {
-              "timestamp": 45379821.641,
-              "progress": 0
-            },
-            {
-              "timestamp": 45380961.769,
-              "progress": 0
-            },
-            {
-              "timestamp": 45381145.644,
-              "progress": 0
-            },
-            {
-              "timestamp": 45381323.837,
-              "progress": 0
-            },
-            {
-              "timestamp": 45381427.429,
-              "progress": 0
-            },
-            {
-              "timestamp": 45381481.313,
-              "progress": 0
-            },
-            {
-              "timestamp": 45381896.611,
-              "progress": 0
-            },
-            {
-              "timestamp": 45382409.503,
-              "progress": 0
-            },
-            {
-              "timestamp": 45382520.906,
-              "progress": 0
-            },
-            {
-              "timestamp": 45382540.526,
-              "progress": 14.568716153310097
-            },
-            {
-              "timestamp": 45382556.931,
-              "progress": 19.015485063013017
-            },
-            {
-              "timestamp": 45382573.52,
-              "progress": 29.757422992647022
-            },
-            {
-              "timestamp": 45382590.587,
-              "progress": 35.623938291013246
-            },
-            {
-              "timestamp": 45382607.071,
-              "progress": 41.29582186378221
-            },
-            {
-              "timestamp": 45382623.458,
-              "progress": 46.970133784907546
-            },
-            {
-              "timestamp": 45382640.277,
-              "progress": 58.88021055519884
-            },
-            {
-              "timestamp": 45382657.891,
-              "progress": 64.18530934780507
-            },
-            {
-              "timestamp": 45382673.69,
-              "progress": 69.54178298278299
-            },
-            {
-              "timestamp": 45382690.699,
-              "progress": 78.91653862204366
-            },
-            {
-              "timestamp": 45382706.719,
-              "progress": 83.01119768292698
-            },
-            {
-              "timestamp": 45382723.955,
-              "progress": 87.08096527188003
-            },
-            {
-              "timestamp": 45382740.334,
-              "progress": 90.46466527910572
-            },
-            {
-              "timestamp": 45382757.225,
-              "progress": 95.39174854350155
-            },
-            {
-              "timestamp": 45382773.793,
-              "progress": 95.39174854350155
-            },
-            {
-              "timestamp": 45382791.013,
-              "progress": 95.39174854350155
-            },
-            {
-              "timestamp": 45382807.207,
-              "progress": 95.39174854350155
-            },
-            {
-              "timestamp": 45382823.355,
-              "progress": 95.39174854350155
-            },
-            {
-              "timestamp": 45382840.121,
-              "progress": 95.39174854350155
-            },
-            {
-              "timestamp": 45382858.169,
+              "timestamp": 48554655.387,
               "progress": 100
             }
           ]
@@ -399,56 +248,56 @@
       "helpText": "This is what the load of your site looked like.",
       "details": {
         "type": "filmstrip",
-        "scale": 9723,
+        "scale": 27654,
         "items": [
           {
-            "timing": 972,
-            "timestamp": 45374089361.99999,
+            "timing": 2765,
+            "timestamp": 48529766368.99999,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 1945,
-            "timestamp": 45375061662,
+            "timing": 5531,
+            "timestamp": 48532531768.99999,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 2917,
-            "timestamp": 45376033962,
+            "timing": 8296,
+            "timestamp": 48535297169,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 3889,
-            "timestamp": 45377006262,
+            "timing": 11062,
+            "timestamp": 48538062569,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 4862,
-            "timestamp": 45377978562,
+            "timing": 13827,
+            "timestamp": 48540827969,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 5834,
-            "timestamp": 45378950861.99999,
+            "timing": 16592,
+            "timestamp": 48543593368.99999,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 6806,
-            "timestamp": 45379923162,
+            "timing": 19358,
+            "timestamp": 48546358768.99999,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 7778,
-            "timestamp": 45380895462,
+            "timing": 22123,
+            "timestamp": 48549124169,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 8751,
-            "timestamp": 45381867762,
+            "timing": 24889,
+            "timestamp": 48551889569,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
           },
           {
-            "timing": 9723,
-            "timestamp": 45382840062,
+            "timing": 27654,
+            "timestamp": 48554654969,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APv3xl4i8Zaf4q1ODTrbUptNCKLY2torKrlFOSxibcN27IyD7jFAHb+BLrVL3wrZTaysi6k+/wA0TRCNvvsFyoAx8uO1AG/QAUAFAHBeNb7xNB4jgh0uS8h06S3jzLbWaTokhlw7NlS2BHzgdTigDnNU1vxzDfKti2sT2wllV2k02EZQOfLZTs5ym3IKrgg+vAB6Z4Zlvp9AspNSV1vmjzKJFCtntkDgHGMgUAalABQBTa6uV1IwCzJtPKD/AGoSL9/ONm3r05zVpK17kttPRFWTVr6O/ki/se4a0VMi5WWL5mwDgJuzjtn1HTGDVRjF/aE5NdBtxqupQ6hJEmjSz2iJIwnSeMM5CoVVVJHLFnX5iACnJwwNEVSlC/Pr2s/Pr933kylNOyj+RpWk73EAkkge2ckgxyFSRgkZ+Ukc9Rz0PODxUSSTsnc0TurtE1SMKACgDnvEWuXem6vpFnbXejxS38jRx2uoXDRTXG2N3fyQM7ioCsRg/KGzjg0AR6hq2t291m3XRGskDrLJcXzxuG+TBwIyBx5mQT/d560AR3Gp+ILW9s/Mk0FLLfOLkyXEiSEDeYgnGAcL82fRiOmKAKUt742A2LP4XS4QXDSxM852AxH7Nzwf9YGLkgfJ93kUAOfU/FkWuxWZuPDTrLaLNFbmaWO4lZWhEzBcN+7G6XBGcFogepy7O1yuVtc1tDq9NN2bCA34hW92DzhbsWj3d9pIBx6ZpElmgAoAzr3Q7O+1G01GWys5dSsklWzvJ7dXltvMAD7G6qGCgMARuAGelAE1zBdSw4ilgWTcx3Swl16HZwGHIO0nnnB6ZBAAwWlzHbmOKW2QkyE5tztJZsg4DjsTn1Jzx0oAilsb17i3kE1kNkheQtaMzMOQNp8wbTtJGTnqeADigCFtJuf7Wi1Epp01ygMImNqUmWBnyyCTcfRDjGCU7ZBV3drDu7ct9DUtlmWLFxIkkmT80aFFxngYJPbHfn26UhEtACY9zQAbfc0AG33NABt9zQAbfc0AG33NABt9zQAAYoA5vVvAXhy/vrzVb+xRriZVM9xJM6/Khjdf4sKFMMbDGMEE9WbIBR1LwhY22pWH2bR7SWy+Z726m1GWGSBVSPy2CgN5vMEI+Zl2hCQSflIBWl+GugQrFHH4b0orHFJbQNLcuGZGEm5SdpJyJZSeT1J7ZoAvQ/DvRrO/uryDSIop7oLFNIl3KpMQYMFAHCr8ifIMDA29ByAVdQ+HuixtPcJpFlLCt2NQLTXssamYIUdpOoICqFwQRhnGOTuAHy+HLWTXtPt/+EXsZIIYPt/9oG4Um2ukMSRRqMb8Msf3wAMQgEcgUtbl2jyXvrfby11v+luot98K/B95owtbzRrWGzTzJnSKV4lUuQzkspBIyAcnptUjGBhkHUaZpNlo8MkNnAkCSSvO4X+KR2LMxJ6kk5oAkksbWW5S4eCJrhDlZWUFlOGHB7cMw+jH1NAELaNpzLKDZW5EoRZB5a/OEOUB9Qvb07UALLo+nTvK0tlbStKQZGeJWLkFSCcjnGxMem0egoAWLSbC3ed4rS3ie4IMzJGFMhHALY6/jQBZ2oSCcEg5GecHp/WgCtcaVY3ayrPaW8wmBWQSRq28EAENnrkKvX+6PQUASyWltLOJnhieYLsEjKCwXIOM+mQDj2FAC2trBZQiK3ijgiHRI1CgfgKAJqAK01zNFcBFtXliKFvNRlwGB+6QSDznjGehzjjIBVsdVurtVaXR7uyyqNsneEsCXZSDsdh8oAbgnhhjJBFADl1S4N08J0q8WNQMTlotj5crgDfu4A3cgcEYy3y0ARy6xdxq5XRL6QqsrAK8A3FSQqjMnVwMrnAwRuKnigCtZ6/qU97NDN4av7WFJCqXDTW7LIuGO7CyEgHAGCM/MPcgA1rK7+2weYYZbc72Ty5gA3ysRnr0OMj2IoAsUAQXE00UkAitzMrsRIwYDyxtJB565IAx757UAZmraPbalcWWozWl295YGUQLb3TQth1KNkLIFcFeQGzghWwGUEAD7izlurqVhbzoNv3jfPGrENgAKhOOBnPHVeCc4AIIXv5r4Je6XNGiMrx3FpflozjA+dSUP8RONrAhT3wCAE+j29rfXep2uk5vbsR/apLabyp5vL+VASCAwVXf7zDoBz2AIl0v7V4ls9Taz1K3ktrebT1D3SeU0TsrGQqHJJzAgDcNiTkddoXz+44WXfZX+/e3lsXba+u4FghfSbrGNhcTxyBcAclmfcQc8E/McHIHGQg04mZ40ZkMbEAlCQSp9OKAKH/CS6R/0FbL/wACE/xp2YB/wkukf9BWy/8AAhP8aLMA/wCEl0j/AKCtl/4EJ/jRZgY17aeEdRffc3VlK4dpFc3vzIzAglTuyvUnAxzz15oswLun33hzSzKbW+sImlIMjfaVLNgYGSTnAHQdu1FmBc/4SXSP+grZf+BCf40WYB/wkukf9BWy/wDAhP8AGizAP+El0j/oK2X/AIEJ/jRZgfgJmu0yDNABmgAzQAZoAM0AGaADNACUgCgAoEX9Hn06C7B1WzuLy12t+7tbkQSbtjBTuKOMBipIxkgEArnILMZDqX2X+0Lr7CZDZea3kGVdr+Xk7dw3Ng4xkZP1PWgCtQAUAFABQAUAfRP7HHiLxJ4b1rxZP4b+HsPjuWTTglw8jpG1imSQwkYjaGPXB/hB521+dcX4Ghi6dN1ZR0U1yzhOa5XyqU0oNNOGijLo5OzTaZ62X4+GCcnNPWz91pPS+jun7rvr6I8TkmuEur6dtBhQG4lVovJlEcDsGXywu7jYWyA2TlRnIyD9/Sio04pS5tFrvfzv1v3PLk+aTdrFPV7S9Ro7u6097GK6zJEfIMcbg4b5M8EYZenYitiTOoAKACgAoAKAPo39inU7yy8YeKILe7nggn0hhLFFIyrJiVANwBweGPX1PrX5lx3OVLDUJ03Z3krrR2cdV6OyutnZdjKZ8/x6zqEVy1yl9cpcl2kMyzMHLNjc2c5ycDJ74r9NcYwtGKsjUhub24u9vnzyzY5HmOWxwB39gB+ApICCmAUAFAH/2Q=="
           }
         ]
@@ -456,8 +305,8 @@
     },
     "estimated-input-latency": {
       "score": 100,
-      "displayValue": "19 ms",
-      "rawValue": 18.7,
+      "displayValue": "16 ms",
+      "rawValue": 16,
       "optimalValue": "< 50 ms",
       "extendedInfo": {
         "value": [
@@ -471,15 +320,15 @@
           },
           {
             "percentile": 0.9,
-            "time": 18.731951428571822
+            "time": 16
           },
           {
             "percentile": 0.99,
-            "time": 205.71473000001424
+            "time": 16
           },
           {
             "percentile": 1,
-            "time": 291.8460000000141
+            "time": 23.843000000000302
           }
         ]
       },
@@ -490,15 +339,11 @@
       "helpText": "The score above is an estimate of how long your app takes to respond to user input, in milliseconds. There is a 90% probability that a user encounters this amount of latency, or less. 10% of the time a user can expect additional latency. If your score is higher than Lighthouse's target score, users may perceive your app as laggy. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency)."
     },
     "first-interactive": {
-      "score": 53,
-      "displayValue": "9,390 ms",
-      "rawValue": 9393.943,
-      "extendedInfo": {
-        "value": {
-          "timeInMs": 9393.943,
-          "timestamp": 45382511005
-        }
-      },
+      "score": null,
+      "displayValue": "",
+      "rawValue": null,
+      "error": true,
+      "debugString": "Audit error: trace not at least 5 seconds longer than FMP",
       "scoringMode": "numeric",
       "name": "first-interactive",
       "category": "Performance",
@@ -506,35 +351,11 @@
       "helpText": "First Interactive marks the time at which the page is minimally interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-interactive)."
     },
     "consistently-interactive": {
-      "score": 53,
-      "displayValue": "9,390 ms",
-      "rawValue": 9393.943,
-      "extendedInfo": {
-        "value": {
-          "cpuQuietPeriod": {
-            "start": 45382511.005,
-            "end": 45387822.49
-          },
-          "networkQuietPeriod": {
-            "start": 45381394.689,
-            "end": 45387822.49
-          },
-          "cpuQuietPeriods": [
-            {
-              "start": 45382511.005,
-              "end": 45387822.49
-            }
-          ],
-          "networkQuietPeriods": [
-            {
-              "start": 45381394.689,
-              "end": 45387822.49
-            }
-          ],
-          "timestamp": 45382511005,
-          "timeInMs": 9393.943
-        }
-      },
+      "score": null,
+      "displayValue": "",
+      "rawValue": null,
+      "error": true,
+      "debugString": "Audit error: Main thread activity continued through the end of the trace recording. Consistently Interactive requires a minimum of 5 seconds of both main thread idle and network idle.",
       "scoringMode": "numeric",
       "name": "consistently-interactive",
       "category": "Performance",
@@ -579,317 +400,298 @@
     },
     "critical-request-chains": {
       "score": false,
-      "displayValue": "27",
+      "displayValue": "24",
       "rawValue": false,
       "optimalValue": 0,
       "extendedInfo": {
         "value": {
           "chains": {
-            "11137.1:redirected.0": {
+            "28671.1:redirected.0": {
               "request": {
                 "url": "https://glegoux.com/articles/",
-                "startTime": 45373.119525,
-                "endTime": 45373.774399,
-                "responseReceivedTime": 45373.772686,
+                "startTime": 48527.002722,
+                "endTime": 48527.659045,
+                "responseReceivedTime": 48527.657487,
                 "transferSize": 280
               },
               "children": {
-                "11137.1:redirected.1": {
+                "28671.1:redirected.1": {
                   "request": {
                     "url": "http://www.glegoux.com/articles/",
-                    "startTime": 45373.774696,
-                    "endTime": 45373.775589,
-                    "responseReceivedTime": 45373.774703,
+                    "startTime": 48527.659335,
+                    "endTime": 48527.660305,
+                    "responseReceivedTime": 48527.659341,
                     "transferSize": 0
                   },
                   "children": {
-                    "11137.1": {
+                    "28671.1": {
                       "request": {
                         "url": "https://www.glegoux.com/articles/",
-                        "startTime": 45373.775803,
-                        "endTime": 45374.448738,
-                        "responseReceivedTime": 45374.431922,
-                        "transferSize": 4159
+                        "startTime": 48527.660495,
+                        "endTime": 48528.325308,
+                        "responseReceivedTime": 48528.309328,
+                        "transferSize": 4160
                       },
                       "children": {
-                        "11137.2": {
+                        "28671.2": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/jquery.min.js",
-                            "startTime": 45374.471072,
-                            "endTime": 45376.952023,
-                            "responseReceivedTime": 45375.036376,
+                            "startTime": 48528.346313,
+                            "endTime": 48530.852762,
+                            "responseReceivedTime": 48528.913421,
                             "transferSize": 96150
                           },
-                          "children": {}
+                          "children": {
+                            "28671.64": {
+                              "request": {
+                                "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
+                                "startTime": 48534.901214,
+                                "endTime": 48535.596868,
+                                "responseReceivedTime": 48535.469762,
+                                "transferSize": 13144
+                              },
+                              "children": {}
+                            },
+                            "28671.62": {
+                              "request": {
+                                "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
+                                "startTime": 48534.907486,
+                                "endTime": 48535.612957,
+                                "responseReceivedTime": 48535.485247,
+                                "transferSize": 13242
+                              },
+                              "children": {}
+                            },
+                            "28671.58": {
+                              "request": {
+                                "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
+                                "startTime": 48534.915955,
+                                "endTime": 48535.50983,
+                                "responseReceivedTime": 48535.501634,
+                                "transferSize": 406
+                              },
+                              "children": {}
+                            }
+                          }
                         },
-                        "11137.3": {
+                        "28671.3": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/jquery-ui.js",
-                            "startTime": 45374.471619,
-                            "endTime": 45378.835532,
-                            "responseReceivedTime": 45375.044651,
+                            "startTime": 48528.34697,
+                            "endTime": 48532.712023,
+                            "responseReceivedTime": 48528.921379,
                             "transferSize": 436209
                           },
                           "children": {}
                         },
-                        "11137.4": {
+                        "28671.4": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/skel.min.js",
-                            "startTime": 45374.472182,
-                            "endTime": 45376.387009,
-                            "responseReceivedTime": 45375.744029,
+                            "startTime": 48528.347227,
+                            "endTime": 48530.248201,
+                            "responseReceivedTime": 48529.604404,
                             "transferSize": 24130
                           },
                           "children": {
-                            "11137.30": {
+                            "28671.30": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/style.css",
-                                "startTime": 45378.989546,
-                                "endTime": 45379.748629,
-                                "responseReceivedTime": 45379.557842,
+                                "startTime": 48532.873607,
+                                "endTime": 48533.63422,
+                                "responseReceivedTime": 48533.44315,
                                 "transferSize": 24009
                               },
                               "children": {}
                             },
-                            "11137.31": {
+                            "28671.31": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/style-xlarge.css",
-                                "startTime": 45378.990538,
-                                "endTime": 45379.566961,
-                                "responseReceivedTime": 45379.566609,
+                                "startTime": 48532.874318,
+                                "endTime": 48533.451227,
+                                "responseReceivedTime": 48533.450862,
                                 "transferSize": 414
                               },
                               "children": {}
                             },
-                            "11137.32": {
+                            "28671.32": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/style-large.css",
-                                "startTime": 45378.990975,
-                                "endTime": 45379.574386,
-                                "responseReceivedTime": 45379.574172,
+                                "startTime": 48532.874867,
+                                "endTime": 48533.459547,
+                                "responseReceivedTime": 48533.459312,
                                 "transferSize": 346
                               },
                               "children": {}
                             },
-                            "11137.33": {
+                            "28671.33": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/style-medium.css",
-                                "startTime": 45378.991863,
-                                "endTime": 45379.637662,
-                                "responseReceivedTime": 45379.581808,
+                                "startTime": 48532.875276,
+                                "endTime": 48533.522485,
+                                "responseReceivedTime": 48533.466951,
                                 "transferSize": 3071
                               },
                               "children": {}
                             },
-                            "11137.34": {
+                            "28671.34": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/style-small.css",
-                                "startTime": 45378.992155,
-                                "endTime": 45379.621902,
-                                "responseReceivedTime": 45379.590074,
+                                "startTime": 48532.875549,
+                                "endTime": 48533.506573,
+                                "responseReceivedTime": 48533.475418,
                                 "transferSize": 2196
                               },
                               "children": {}
                             },
-                            "11137.35": {
+                            "28671.35": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/style-xsmall.css",
-                                "startTime": 45378.992729,
-                                "endTime": 45379.598236,
-                                "responseReceivedTime": 45379.597901,
+                                "startTime": 48532.876218,
+                                "endTime": 48533.482806,
+                                "responseReceivedTime": 48533.482445,
                                 "transferSize": 1119
                               },
                               "children": {}
                             }
                           }
                         },
-                        "11137.5": {
+                        "28671.5": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/skel-layers.min.js",
-                            "startTime": 45374.472509,
-                            "endTime": 45376.308033,
-                            "responseReceivedTime": 45375.767485,
+                            "startTime": 48528.34775,
+                            "endTime": 48530.160701,
+                            "responseReceivedTime": 48529.628777,
                             "transferSize": 20088
                           },
                           "children": {}
                         },
-                        "11137.6": {
+                        "28671.6": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/init.js",
-                            "startTime": 45374.472942,
-                            "endTime": 45376.499478,
-                            "responseReceivedTime": 45376.466498,
+                            "startTime": 48528.348098,
+                            "endTime": 48530.343441,
+                            "responseReceivedTime": 48530.312026,
                             "transferSize": 2851
                           },
                           "children": {}
                         },
-                        "11137.7": {
+                        "28671.7": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/jquery.cookie.js",
-                            "startTime": 45374.47335,
-                            "endTime": 45376.967757,
-                            "responseReceivedTime": 45376.904259,
+                            "startTime": 48528.348335,
+                            "endTime": 48530.812558,
+                            "responseReceivedTime": 48530.749216,
                             "transferSize": 3484
                           },
                           "children": {}
                         },
-                        "11137.8": {
+                        "28671.8": {
                           "request": {
                             "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
-                            "startTime": 45374.473697,
-                            "endTime": 45375.585703,
-                            "responseReceivedTime": 45375.195179,
+                            "startTime": 48528.348632,
+                            "endTime": 48529.478597,
+                            "responseReceivedTime": 48529.088065,
                             "transferSize": 19432
                           },
                           "children": {}
                         },
-                        "11137.9": {
+                        "28671.9": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/browser.js",
-                            "startTime": 45374.474262,
-                            "endTime": 45377.000248,
-                            "responseReceivedTime": 45376.983418,
+                            "startTime": 48528.348917,
+                            "endTime": 48530.868836,
+                            "responseReceivedTime": 48530.84458,
                             "transferSize": 2179
                           },
                           "children": {}
                         },
-                        "11137.10": {
+                        "28671.10": {
                           "request": {
                             "url": "https://www.glegoux.com/static/js/layout.js",
-                            "startTime": 45374.474529,
-                            "endTime": 45377.079465,
-                            "responseReceivedTime": 45377.079106,
+                            "startTime": 48528.349155,
+                            "endTime": 48530.916685,
+                            "responseReceivedTime": 48530.916274,
                             "transferSize": 1024
                           },
                           "children": {}
                         },
-                        "11137.11": {
+                        "28671.11": {
                           "request": {
                             "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-                            "startTime": 45374.475163,
-                            "endTime": 45375.283565,
-                            "responseReceivedTime": 45375.282943,
-                            "transferSize": 572
+                            "startTime": 48528.349579,
+                            "endTime": 48529.167762,
+                            "responseReceivedTime": 48529.167274,
+                            "transferSize": 563
                           },
                           "children": {}
                         },
-                        "11137.12": {
+                        "28671.12": {
                           "request": {
                             "url": "https://www.glegoux.com/static/css/pin.css",
-                            "startTime": 45374.475562,
-                            "endTime": 45375.132496,
-                            "responseReceivedTime": 45375.131906,
+                            "startTime": 48528.349826,
+                            "endTime": 48528.98469,
+                            "responseReceivedTime": 48528.984234,
                             "transferSize": 1489
                           },
                           "children": {}
                         },
-                        "11137.13": {
+                        "28671.13": {
                           "request": {
                             "url": "https://www.glegoux.com/static/css/lightbox.css",
-                            "startTime": 45374.476208,
-                            "endTime": 45375.147519,
-                            "responseReceivedTime": 45375.147095,
+                            "startTime": 48528.350013,
+                            "endTime": 48529.008581,
+                            "responseReceivedTime": 48529.008224,
                             "transferSize": 880
                           },
                           "children": {}
                         },
-                        "11137.14": {
+                        "28671.14": {
                           "request": {
                             "url": "https://www.glegoux.com/static/css/loader.css",
-                            "startTime": 45374.476506,
-                            "endTime": 45375.164419,
-                            "responseReceivedTime": 45375.164017,
+                            "startTime": 48528.350311,
+                            "endTime": 48529.024999,
+                            "responseReceivedTime": 48529.02453,
                             "transferSize": 652
                           },
                           "children": {}
                         },
-                        "11137.15": {
+                        "28671.15": {
                           "request": {
                             "url": "https://www.glegoux.com/static/lib/bootstrap/css/bootstrap.css",
-                            "startTime": 45374.477053,
-                            "endTime": 45376.959991,
-                            "responseReceivedTime": 45375.179313,
+                            "startTime": 48528.35052,
+                            "endTime": 48530.83645,
+                            "responseReceivedTime": 48529.048428,
                             "transferSize": 86460
                           },
                           "children": {}
                         },
-                        "11137.16": {
+                        "28671.16": {
                           "request": {
                             "url": "https://www.glegoux.com/static/apps/articles/css/article.css",
-                            "startTime": 45374.477422,
-                            "endTime": 45375.871486,
-                            "responseReceivedTime": 45375.727941,
+                            "startTime": 48528.350729,
+                            "endTime": 48529.715562,
+                            "responseReceivedTime": 48529.580757,
                             "transferSize": 4950
                           },
                           "children": {}
                         },
-                        "11137.56": {
+                        "28671.56": {
                           "request": {
                             "url": "https://www.glegoux.com/static/css/font-awesome.min.css",
-                            "startTime": 45379.751294,
-                            "endTime": 45380.662957,
-                            "responseReceivedTime": 45380.345,
+                            "startTime": 48533.637365,
+                            "endTime": 48534.547566,
+                            "responseReceivedTime": 48534.229846,
                             "transferSize": 31350
                           },
                           "children": {}
                         },
-                        "11137.57": {
+                        "28671.57": {
                           "request": {
                             "url": "https://fonts.googleapis.com/css?family=Raleway:700,400",
-                            "startTime": 45379.751722,
-                            "endTime": 45380.337508,
-                            "responseReceivedTime": 45380.337169,
+                            "startTime": 48533.637808,
+                            "endTime": 48534.222026,
+                            "responseReceivedTime": 48534.221704,
                             "transferSize": 553
-                          },
-                          "children": {}
-                        },
-                        "11137.62": {
-                          "request": {
-                            "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
-                            "startTime": 45380.682251,
-                            "endTime": 45381.378259,
-                            "responseReceivedTime": 45381.250455,
-                            "transferSize": 13388
-                          },
-                          "children": {}
-                        },
-                        "11137.64": {
-                          "request": {
-                            "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
-                            "startTime": 45380.688803,
-                            "endTime": 45381.394689,
-                            "responseReceivedTime": 45381.266837,
-                            "transferSize": 12998
-                          },
-                          "children": {}
-                        },
-                        "11137.58": {
-                          "request": {
-                            "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
-                            "startTime": 45380.69912,
-                            "endTime": 45381.284424,
-                            "responseReceivedTime": 45381.282678,
-                            "transferSize": 406
-                          },
-                          "children": {}
-                        },
-                        "11137.59": {
-                          "request": {
-                            "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
-                            "startTime": 45381.285412,
-                            "endTime": 45381.857035,
-                            "responseReceivedTime": 45381.855108,
-                            "transferSize": 406
-                          },
-                          "children": {}
-                        },
-                        "11137.60": {
-                          "request": {
-                            "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
-                            "startTime": 45381.858377,
-                            "endTime": 45382.428792,
-                            "responseReceivedTime": 45382.426749,
-                            "transferSize": 406
                           },
                           "children": {}
                         }
@@ -898,11 +700,31 @@
                   }
                 }
               }
+            },
+            "28671.59": {
+              "request": {
+                "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
+                "startTime": 48535.511119,
+                "endTime": 48536.082865,
+                "responseReceivedTime": 48536.081105,
+                "transferSize": 406
+              },
+              "children": {}
+            },
+            "28671.60": {
+              "request": {
+                "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
+                "startTime": 48536.083627,
+                "endTime": 48536.655151,
+                "responseReceivedTime": 48536.65374,
+                "transferSize": 406
+              },
+              "children": {}
             }
           },
           "longestChain": {
-            "duration": 9309.266999996908,
-            "length": 4,
+            "duration": 9652.429000001575,
+            "length": 1,
             "transferSize": 406
           }
         }
@@ -920,311 +742,292 @@
           "text": "View critical network waterfall:"
         },
         "chains": {
-          "11137.1:redirected.0": {
+          "28671.1:redirected.0": {
             "request": {
               "url": "https://glegoux.com/articles/",
-              "startTime": 45373.119525,
-              "endTime": 45373.774399,
-              "responseReceivedTime": 45373.772686,
+              "startTime": 48527.002722,
+              "endTime": 48527.659045,
+              "responseReceivedTime": 48527.657487,
               "transferSize": 280
             },
             "children": {
-              "11137.1:redirected.1": {
+              "28671.1:redirected.1": {
                 "request": {
                   "url": "http://www.glegoux.com/articles/",
-                  "startTime": 45373.774696,
-                  "endTime": 45373.775589,
-                  "responseReceivedTime": 45373.774703,
+                  "startTime": 48527.659335,
+                  "endTime": 48527.660305,
+                  "responseReceivedTime": 48527.659341,
                   "transferSize": 0
                 },
                 "children": {
-                  "11137.1": {
+                  "28671.1": {
                     "request": {
                       "url": "https://www.glegoux.com/articles/",
-                      "startTime": 45373.775803,
-                      "endTime": 45374.448738,
-                      "responseReceivedTime": 45374.431922,
-                      "transferSize": 4159
+                      "startTime": 48527.660495,
+                      "endTime": 48528.325308,
+                      "responseReceivedTime": 48528.309328,
+                      "transferSize": 4160
                     },
                     "children": {
-                      "11137.2": {
+                      "28671.2": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/jquery.min.js",
-                          "startTime": 45374.471072,
-                          "endTime": 45376.952023,
-                          "responseReceivedTime": 45375.036376,
+                          "startTime": 48528.346313,
+                          "endTime": 48530.852762,
+                          "responseReceivedTime": 48528.913421,
                           "transferSize": 96150
                         },
-                        "children": {}
+                        "children": {
+                          "28671.64": {
+                            "request": {
+                              "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
+                              "startTime": 48534.901214,
+                              "endTime": 48535.596868,
+                              "responseReceivedTime": 48535.469762,
+                              "transferSize": 13144
+                            },
+                            "children": {}
+                          },
+                          "28671.62": {
+                            "request": {
+                              "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
+                              "startTime": 48534.907486,
+                              "endTime": 48535.612957,
+                              "responseReceivedTime": 48535.485247,
+                              "transferSize": 13242
+                            },
+                            "children": {}
+                          },
+                          "28671.58": {
+                            "request": {
+                              "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
+                              "startTime": 48534.915955,
+                              "endTime": 48535.50983,
+                              "responseReceivedTime": 48535.501634,
+                              "transferSize": 406
+                            },
+                            "children": {}
+                          }
+                        }
                       },
-                      "11137.3": {
+                      "28671.3": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/jquery-ui.js",
-                          "startTime": 45374.471619,
-                          "endTime": 45378.835532,
-                          "responseReceivedTime": 45375.044651,
+                          "startTime": 48528.34697,
+                          "endTime": 48532.712023,
+                          "responseReceivedTime": 48528.921379,
                           "transferSize": 436209
                         },
                         "children": {}
                       },
-                      "11137.4": {
+                      "28671.4": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/skel.min.js",
-                          "startTime": 45374.472182,
-                          "endTime": 45376.387009,
-                          "responseReceivedTime": 45375.744029,
+                          "startTime": 48528.347227,
+                          "endTime": 48530.248201,
+                          "responseReceivedTime": 48529.604404,
                           "transferSize": 24130
                         },
                         "children": {
-                          "11137.30": {
+                          "28671.30": {
                             "request": {
                               "url": "https://www.glegoux.com/static/css/style.css",
-                              "startTime": 45378.989546,
-                              "endTime": 45379.748629,
-                              "responseReceivedTime": 45379.557842,
+                              "startTime": 48532.873607,
+                              "endTime": 48533.63422,
+                              "responseReceivedTime": 48533.44315,
                               "transferSize": 24009
                             },
                             "children": {}
                           },
-                          "11137.31": {
+                          "28671.31": {
                             "request": {
                               "url": "https://www.glegoux.com/static/css/style-xlarge.css",
-                              "startTime": 45378.990538,
-                              "endTime": 45379.566961,
-                              "responseReceivedTime": 45379.566609,
+                              "startTime": 48532.874318,
+                              "endTime": 48533.451227,
+                              "responseReceivedTime": 48533.450862,
                               "transferSize": 414
                             },
                             "children": {}
                           },
-                          "11137.32": {
+                          "28671.32": {
                             "request": {
                               "url": "https://www.glegoux.com/static/css/style-large.css",
-                              "startTime": 45378.990975,
-                              "endTime": 45379.574386,
-                              "responseReceivedTime": 45379.574172,
+                              "startTime": 48532.874867,
+                              "endTime": 48533.459547,
+                              "responseReceivedTime": 48533.459312,
                               "transferSize": 346
                             },
                             "children": {}
                           },
-                          "11137.33": {
+                          "28671.33": {
                             "request": {
                               "url": "https://www.glegoux.com/static/css/style-medium.css",
-                              "startTime": 45378.991863,
-                              "endTime": 45379.637662,
-                              "responseReceivedTime": 45379.581808,
+                              "startTime": 48532.875276,
+                              "endTime": 48533.522485,
+                              "responseReceivedTime": 48533.466951,
                               "transferSize": 3071
                             },
                             "children": {}
                           },
-                          "11137.34": {
+                          "28671.34": {
                             "request": {
                               "url": "https://www.glegoux.com/static/css/style-small.css",
-                              "startTime": 45378.992155,
-                              "endTime": 45379.621902,
-                              "responseReceivedTime": 45379.590074,
+                              "startTime": 48532.875549,
+                              "endTime": 48533.506573,
+                              "responseReceivedTime": 48533.475418,
                               "transferSize": 2196
                             },
                             "children": {}
                           },
-                          "11137.35": {
+                          "28671.35": {
                             "request": {
                               "url": "https://www.glegoux.com/static/css/style-xsmall.css",
-                              "startTime": 45378.992729,
-                              "endTime": 45379.598236,
-                              "responseReceivedTime": 45379.597901,
+                              "startTime": 48532.876218,
+                              "endTime": 48533.482806,
+                              "responseReceivedTime": 48533.482445,
                               "transferSize": 1119
                             },
                             "children": {}
                           }
                         }
                       },
-                      "11137.5": {
+                      "28671.5": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/skel-layers.min.js",
-                          "startTime": 45374.472509,
-                          "endTime": 45376.308033,
-                          "responseReceivedTime": 45375.767485,
+                          "startTime": 48528.34775,
+                          "endTime": 48530.160701,
+                          "responseReceivedTime": 48529.628777,
                           "transferSize": 20088
                         },
                         "children": {}
                       },
-                      "11137.6": {
+                      "28671.6": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/init.js",
-                          "startTime": 45374.472942,
-                          "endTime": 45376.499478,
-                          "responseReceivedTime": 45376.466498,
+                          "startTime": 48528.348098,
+                          "endTime": 48530.343441,
+                          "responseReceivedTime": 48530.312026,
                           "transferSize": 2851
                         },
                         "children": {}
                       },
-                      "11137.7": {
+                      "28671.7": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/jquery.cookie.js",
-                          "startTime": 45374.47335,
-                          "endTime": 45376.967757,
-                          "responseReceivedTime": 45376.904259,
+                          "startTime": 48528.348335,
+                          "endTime": 48530.812558,
+                          "responseReceivedTime": 48530.749216,
                           "transferSize": 3484
                         },
                         "children": {}
                       },
-                      "11137.8": {
+                      "28671.8": {
                         "request": {
                           "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
-                          "startTime": 45374.473697,
-                          "endTime": 45375.585703,
-                          "responseReceivedTime": 45375.195179,
+                          "startTime": 48528.348632,
+                          "endTime": 48529.478597,
+                          "responseReceivedTime": 48529.088065,
                           "transferSize": 19432
                         },
                         "children": {}
                       },
-                      "11137.9": {
+                      "28671.9": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/browser.js",
-                          "startTime": 45374.474262,
-                          "endTime": 45377.000248,
-                          "responseReceivedTime": 45376.983418,
+                          "startTime": 48528.348917,
+                          "endTime": 48530.868836,
+                          "responseReceivedTime": 48530.84458,
                           "transferSize": 2179
                         },
                         "children": {}
                       },
-                      "11137.10": {
+                      "28671.10": {
                         "request": {
                           "url": "https://www.glegoux.com/static/js/layout.js",
-                          "startTime": 45374.474529,
-                          "endTime": 45377.079465,
-                          "responseReceivedTime": 45377.079106,
+                          "startTime": 48528.349155,
+                          "endTime": 48530.916685,
+                          "responseReceivedTime": 48530.916274,
                           "transferSize": 1024
                         },
                         "children": {}
                       },
-                      "11137.11": {
+                      "28671.11": {
                         "request": {
                           "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-                          "startTime": 45374.475163,
-                          "endTime": 45375.283565,
-                          "responseReceivedTime": 45375.282943,
-                          "transferSize": 572
+                          "startTime": 48528.349579,
+                          "endTime": 48529.167762,
+                          "responseReceivedTime": 48529.167274,
+                          "transferSize": 563
                         },
                         "children": {}
                       },
-                      "11137.12": {
+                      "28671.12": {
                         "request": {
                           "url": "https://www.glegoux.com/static/css/pin.css",
-                          "startTime": 45374.475562,
-                          "endTime": 45375.132496,
-                          "responseReceivedTime": 45375.131906,
+                          "startTime": 48528.349826,
+                          "endTime": 48528.98469,
+                          "responseReceivedTime": 48528.984234,
                           "transferSize": 1489
                         },
                         "children": {}
                       },
-                      "11137.13": {
+                      "28671.13": {
                         "request": {
                           "url": "https://www.glegoux.com/static/css/lightbox.css",
-                          "startTime": 45374.476208,
-                          "endTime": 45375.147519,
-                          "responseReceivedTime": 45375.147095,
+                          "startTime": 48528.350013,
+                          "endTime": 48529.008581,
+                          "responseReceivedTime": 48529.008224,
                           "transferSize": 880
                         },
                         "children": {}
                       },
-                      "11137.14": {
+                      "28671.14": {
                         "request": {
                           "url": "https://www.glegoux.com/static/css/loader.css",
-                          "startTime": 45374.476506,
-                          "endTime": 45375.164419,
-                          "responseReceivedTime": 45375.164017,
+                          "startTime": 48528.350311,
+                          "endTime": 48529.024999,
+                          "responseReceivedTime": 48529.02453,
                           "transferSize": 652
                         },
                         "children": {}
                       },
-                      "11137.15": {
+                      "28671.15": {
                         "request": {
                           "url": "https://www.glegoux.com/static/lib/bootstrap/css/bootstrap.css",
-                          "startTime": 45374.477053,
-                          "endTime": 45376.959991,
-                          "responseReceivedTime": 45375.179313,
+                          "startTime": 48528.35052,
+                          "endTime": 48530.83645,
+                          "responseReceivedTime": 48529.048428,
                           "transferSize": 86460
                         },
                         "children": {}
                       },
-                      "11137.16": {
+                      "28671.16": {
                         "request": {
                           "url": "https://www.glegoux.com/static/apps/articles/css/article.css",
-                          "startTime": 45374.477422,
-                          "endTime": 45375.871486,
-                          "responseReceivedTime": 45375.727941,
+                          "startTime": 48528.350729,
+                          "endTime": 48529.715562,
+                          "responseReceivedTime": 48529.580757,
                           "transferSize": 4950
                         },
                         "children": {}
                       },
-                      "11137.56": {
+                      "28671.56": {
                         "request": {
                           "url": "https://www.glegoux.com/static/css/font-awesome.min.css",
-                          "startTime": 45379.751294,
-                          "endTime": 45380.662957,
-                          "responseReceivedTime": 45380.345,
+                          "startTime": 48533.637365,
+                          "endTime": 48534.547566,
+                          "responseReceivedTime": 48534.229846,
                           "transferSize": 31350
                         },
                         "children": {}
                       },
-                      "11137.57": {
+                      "28671.57": {
                         "request": {
                           "url": "https://fonts.googleapis.com/css?family=Raleway:700,400",
-                          "startTime": 45379.751722,
-                          "endTime": 45380.337508,
-                          "responseReceivedTime": 45380.337169,
+                          "startTime": 48533.637808,
+                          "endTime": 48534.222026,
+                          "responseReceivedTime": 48534.221704,
                           "transferSize": 553
-                        },
-                        "children": {}
-                      },
-                      "11137.62": {
-                        "request": {
-                          "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
-                          "startTime": 45380.682251,
-                          "endTime": 45381.378259,
-                          "responseReceivedTime": 45381.250455,
-                          "transferSize": 13388
-                        },
-                        "children": {}
-                      },
-                      "11137.64": {
-                        "request": {
-                          "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
-                          "startTime": 45380.688803,
-                          "endTime": 45381.394689,
-                          "responseReceivedTime": 45381.266837,
-                          "transferSize": 12998
-                        },
-                        "children": {}
-                      },
-                      "11137.58": {
-                        "request": {
-                          "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
-                          "startTime": 45380.69912,
-                          "endTime": 45381.284424,
-                          "responseReceivedTime": 45381.282678,
-                          "transferSize": 406
-                        },
-                        "children": {}
-                      },
-                      "11137.59": {
-                        "request": {
-                          "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
-                          "startTime": 45381.285412,
-                          "endTime": 45381.857035,
-                          "responseReceivedTime": 45381.855108,
-                          "transferSize": 406
-                        },
-                        "children": {}
-                      },
-                      "11137.60": {
-                        "request": {
-                          "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
-                          "startTime": 45381.858377,
-                          "endTime": 45382.428792,
-                          "responseReceivedTime": 45382.426749,
-                          "transferSize": 406
                         },
                         "children": {}
                       }
@@ -1233,11 +1036,31 @@
                 }
               }
             }
+          },
+          "28671.59": {
+            "request": {
+              "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
+              "startTime": 48535.511119,
+              "endTime": 48536.082865,
+              "responseReceivedTime": 48536.081105,
+              "transferSize": 406
+            },
+            "children": {}
+          },
+          "28671.60": {
+            "request": {
+              "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
+              "startTime": 48536.083627,
+              "endTime": 48536.655151,
+              "responseReceivedTime": 48536.65374,
+              "transferSize": 406
+            },
+            "children": {}
           }
         },
         "longestChain": {
-          "duration": 9309.266999996908,
-          "length": 4,
+          "duration": 9652.429000001575,
+          "length": 1,
           "transferSize": 406
         }
       }
@@ -2807,7 +2630,7 @@
     "total-byte-weight": {
       "score": 100,
       "displayValue": "Total size was 875 KB",
-      "rawValue": 896505,
+      "rawValue": 896489,
       "optimalValue": "< 1,600 KB",
       "extendedInfo": {
         "value": {
@@ -3046,49 +2869,17 @@
       }
     },
     "offscreen-images": {
-      "score": 100,
+      "score": null,
       "displayValue": "",
-      "rawValue": 0,
-      "extendedInfo": {
-        "value": {
-          "wastedMs": 0,
-          "wastedKb": 0,
-          "results": []
-        }
-      },
+      "rawValue": null,
+      "error": true,
+      "debugString": "Audit error: trace not at least 5 seconds longer than FMP",
       "scoringMode": "binary",
       "informative": true,
       "name": "offscreen-images",
       "category": "Images",
       "description": "Offscreen images",
-      "helpText": "Consider lazy-loading offscreen images to improve page load speed and time to interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/offscreen-images).",
-      "details": {
-        "type": "table",
-        "header": "View Details",
-        "itemHeaders": [
-          {
-            "type": "text",
-            "itemType": "thumbnail",
-            "text": ""
-          },
-          {
-            "type": "text",
-            "itemType": "url",
-            "text": "URL"
-          },
-          {
-            "type": "text",
-            "itemType": "text",
-            "text": "Original"
-          },
-          {
-            "type": "text",
-            "itemType": "text",
-            "text": "Potential Savings"
-          }
-        ],
-        "items": []
-      }
+      "helpText": "Consider lazy-loading offscreen images to improve page load speed and time to interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/offscreen-images)."
     },
     "uses-webp-images": {
       "score": 100,
@@ -3667,41 +3458,41 @@
     },
     "link-blocking-first-paint": {
       "score": 0,
-      "displayValue": "6 resources delayed first paint by 2,485 ms",
-      "rawValue": 2485,
+      "displayValue": "6 resources delayed first paint by 2,487 ms",
+      "rawValue": 2487,
       "extendedInfo": {
         "value": {
-          "wastedMs": "2,485 ms",
+          "wastedMs": "2,487 ms",
           "results": [
             {
               "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-              "totalKb": "0.56 KB",
-              "totalMs": "808 ms"
+              "totalKb": "0.55 KB",
+              "totalMs": "818 ms"
             },
             {
               "url": "https://www.glegoux.com/static/css/pin.css",
               "totalKb": "1.45 KB",
-              "totalMs": "657 ms"
+              "totalMs": "635 ms"
             },
             {
               "url": "https://www.glegoux.com/static/css/lightbox.css",
               "totalKb": "0.86 KB",
-              "totalMs": "672 ms"
+              "totalMs": "659 ms"
             },
             {
               "url": "https://www.glegoux.com/static/css/loader.css",
               "totalKb": "0.64 KB",
-              "totalMs": "689 ms"
+              "totalMs": "675 ms"
             },
             {
               "url": "https://www.glegoux.com/static/lib/bootstrap/css/bootstrap.css",
               "totalKb": "84.43 KB",
-              "totalMs": "2,485 ms"
+              "totalMs": "2,487 ms"
             },
             {
               "url": "https://www.glegoux.com/static/apps/articles/css/article.css",
               "totalKb": "4.83 KB",
-              "totalMs": "1,396 ms"
+              "totalMs": "1,366 ms"
             }
           ]
         }
@@ -3740,11 +3531,11 @@
             },
             {
               "type": "text",
-              "text": "0.56 KB"
+              "text": "0.55 KB"
             },
             {
               "type": "text",
-              "text": "808 ms"
+              "text": "818 ms"
             }
           ],
           [
@@ -3758,7 +3549,7 @@
             },
             {
               "type": "text",
-              "text": "657 ms"
+              "text": "635 ms"
             }
           ],
           [
@@ -3772,7 +3563,7 @@
             },
             {
               "type": "text",
-              "text": "672 ms"
+              "text": "659 ms"
             }
           ],
           [
@@ -3786,7 +3577,7 @@
             },
             {
               "type": "text",
-              "text": "689 ms"
+              "text": "675 ms"
             }
           ],
           [
@@ -3800,7 +3591,7 @@
             },
             {
               "type": "text",
-              "text": "2,485 ms"
+              "text": "2,487 ms"
             }
           ],
           [
@@ -3814,7 +3605,7 @@
             },
             {
               "type": "text",
-              "text": "1,396 ms"
+              "text": "1,366 ms"
             }
           ]
         ]
@@ -3961,56 +3752,56 @@
     },
     "script-blocking-first-paint": {
       "score": 0,
-      "displayValue": "9 resources delayed first paint by 4,364 ms",
-      "rawValue": 4364,
+      "displayValue": "9 resources delayed first paint by 4,366 ms",
+      "rawValue": 4366,
       "extendedInfo": {
         "value": {
-          "wastedMs": "4,364 ms",
+          "wastedMs": "4,366 ms",
           "results": [
             {
               "url": "https://www.glegoux.com/static/js/jquery.min.js",
               "totalKb": "93.9 KB",
-              "totalMs": "2,481 ms"
+              "totalMs": "2,506 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/jquery-ui.js",
               "totalKb": "425.99 KB",
-              "totalMs": "4,364 ms"
+              "totalMs": "4,366 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/skel.min.js",
               "totalKb": "23.56 KB",
-              "totalMs": "1,916 ms"
+              "totalMs": "1,902 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/skel-layers.min.js",
               "totalKb": "19.62 KB",
-              "totalMs": "1,837 ms"
+              "totalMs": "1,814 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/init.js",
               "totalKb": "2.78 KB",
-              "totalMs": "2,028 ms"
+              "totalMs": "1,997 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/jquery.cookie.js",
               "totalKb": "3.4 KB",
-              "totalMs": "2,497 ms"
+              "totalMs": "2,466 ms"
             },
             {
               "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
               "totalKb": "18.98 KB",
-              "totalMs": "1,115 ms"
+              "totalMs": "1,132 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/browser.js",
               "totalKb": "2.13 KB",
-              "totalMs": "2,529 ms"
+              "totalMs": "2,523 ms"
             },
             {
               "url": "https://www.glegoux.com/static/js/layout.js",
               "totalKb": "1 KB",
-              "totalMs": "2,608 ms"
+              "totalMs": "2,570 ms"
             }
           ]
         }
@@ -4053,7 +3844,7 @@
             },
             {
               "type": "text",
-              "text": "2,481 ms"
+              "text": "2,506 ms"
             }
           ],
           [
@@ -4067,7 +3858,7 @@
             },
             {
               "type": "text",
-              "text": "4,364 ms"
+              "text": "4,366 ms"
             }
           ],
           [
@@ -4081,7 +3872,7 @@
             },
             {
               "type": "text",
-              "text": "1,916 ms"
+              "text": "1,902 ms"
             }
           ],
           [
@@ -4095,7 +3886,7 @@
             },
             {
               "type": "text",
-              "text": "1,837 ms"
+              "text": "1,814 ms"
             }
           ],
           [
@@ -4109,7 +3900,7 @@
             },
             {
               "type": "text",
-              "text": "2,028 ms"
+              "text": "1,997 ms"
             }
           ],
           [
@@ -4123,7 +3914,7 @@
             },
             {
               "type": "text",
-              "text": "2,497 ms"
+              "text": "2,466 ms"
             }
           ],
           [
@@ -4137,7 +3928,7 @@
             },
             {
               "type": "text",
-              "text": "1,115 ms"
+              "text": "1,132 ms"
             }
           ],
           [
@@ -4151,7 +3942,7 @@
             },
             {
               "type": "text",
-              "text": "2,529 ms"
+              "text": "2,523 ms"
             }
           ],
           [
@@ -4165,7 +3956,7 @@
             },
             {
               "type": "text",
-              "text": "2,608 ms"
+              "text": "2,570 ms"
             }
           ]
         ]
@@ -4280,15 +4071,15 @@
             },
             {
               "protocol": "http/1.1",
+              "url": "https://www.glegoux.com/static/icon/favicon.ico"
+            },
+            {
+              "protocol": "http/1.1",
               "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0"
             },
             {
               "protocol": "http/1.1",
               "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0"
-            },
-            {
-              "protocol": "http/1.1",
-              "url": "https://www.glegoux.com/static/icon/favicon.ico"
             }
           ]
         }
@@ -4567,6 +4358,16 @@
           [
             {
               "type": "url",
+              "text": "https://www.glegoux.com/static/icon/favicon.ico"
+            },
+            {
+              "type": "text",
+              "text": "http/1.1"
+            }
+          ],
+          [
+            {
+              "type": "url",
               "text": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0"
             },
             {
@@ -4578,16 +4379,6 @@
             {
               "type": "url",
               "text": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0"
-            },
-            {
-              "type": "text",
-              "text": "http/1.1"
-            }
-          ],
-          [
-            {
-              "type": "url",
-              "text": "https://www.glegoux.com/static/icon/favicon.ico"
             },
             {
               "type": "text",
@@ -4608,7 +4399,7 @@
             "source": "violation",
             "level": "verbose",
             "text": "Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive.",
-            "timestamp": 1502839181404.12,
+            "timestamp": 1502842335280.85,
             "url": "https://www.glegoux.com/static/js/jquery.min.js",
             "lineNumber": 2,
             "stackTrace": {
@@ -4754,7 +4545,7 @@
             "source": "violation",
             "level": "verbose",
             "text": "Added non-passive event listener to a scroll-blocking 'touchmove' event. Consider marking event handler as 'passive' to make the page more responsive.",
-            "timestamp": 1502839181409.02,
+            "timestamp": 1502842335284.98,
             "url": "https://www.glegoux.com/static/js/jquery.min.js",
             "lineNumber": 2,
             "stackTrace": {
@@ -4900,7 +4691,7 @@
             "source": "violation",
             "level": "verbose",
             "text": "Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive.",
-            "timestamp": 1502839181430.11,
+            "timestamp": 1502842335306.03,
             "url": "https://www.glegoux.com/static/js/jquery.min.js",
             "lineNumber": 2,
             "stackTrace": {
@@ -5046,7 +4837,7 @@
             "source": "violation",
             "level": "verbose",
             "text": "Added non-passive event listener to a scroll-blocking 'touchmove' event. Consider marking event handler as 'passive' to make the page more responsive.",
-            "timestamp": 1502839181431.16,
+            "timestamp": 1502842335306.48,
             "url": "https://www.glegoux.com/static/js/jquery.min.js",
             "lineNumber": 2,
             "stackTrace": {
@@ -5274,7 +5065,7 @@
     ],
     "blockedUrlPatterns": []
   },
-  "score": 45.45454545454545,
+  "score": 36.36363636363637,
   "reportCategories": [
     {
       "name": "Progressive Web App",
@@ -5381,57 +5172,18 @@
           "id": "load-fast-enough-for-pwa",
           "weight": 1,
           "result": {
-            "score": true,
+            "score": null,
             "displayValue": "",
-            "rawValue": true,
-            "extendedInfo": {
-              "value": {
-                "areLatenciesAll3G": true,
-                "firstRequestLatencies": [
-                  {
-                    "url": "https://glegoux.com/articles/",
-                    "latency": "566.71"
-                  },
-                  {
-                    "url": "https://www.glegoux.com/articles/",
-                    "latency": "568.57"
-                  },
-                  {
-                    "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
-                    "latency": "589.29"
-                  },
-                  {
-                    "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-                    "latency": "597.14"
-                  },
-                  {
-                    "url": "https://www.google-analytics.com/analytics.js",
-                    "latency": "567.92"
-                  },
-                  {
-                    "url": "https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-102138582-1&cid=1989265185.1502839181&jid=981667577&_gid=745198566.1502839181&gjid=850386780&_v=j59&z=2111845981",
-                    "latency": "568.72"
-                  },
-                  {
-                    "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
-                    "latency": "567.77"
-                  },
-                  {
-                    "url": "https://cdn.mathjax.org/mathjax/contrib/a11y/accessibility-menu.js?V=2.7.0",
-                    "latency": "568.1"
-                  }
-                ],
-                "isFast": true,
-                "timeToFirstInteractive": 9393.943
-              }
-            },
+            "rawValue": null,
+            "error": true,
+            "debugString": "Audit error: trace not at least 5 seconds longer than FMP",
             "scoringMode": "binary",
             "name": "load-fast-enough-for-pwa",
             "category": "PWA",
-            "description": "Page load is fast enough on 3G",
+            "description": "Page load is not fast enough on 3G",
             "helpText": "A fast page load over a 3G network ensures a good mobile user experience. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/fast-3g)."
           },
-          "score": 100
+          "score": 0
         },
         {
           "id": "webapp-install-banner",
@@ -5612,7 +5364,7 @@
         }
       ],
       "id": "pwa",
-      "score": 45.45454545454545
+      "score": 36.36363636363637
     },
     {
       "name": "Performance",
@@ -5623,27 +5375,27 @@
           "weight": 5,
           "group": "perf-metric",
           "result": {
-            "score": 20,
-            "displayValue": "6,090 ms",
-            "rawValue": 6092.3,
+            "score": 0,
+            "displayValue": "27,020 ms",
+            "rawValue": 27020.6,
             "optimalValue": "< 1,600 ms",
             "extendedInfo": {
               "value": {
                 "timestamps": {
-                  "navStart": 45373117062,
-                  "fCP": 45379209353,
-                  "fMP": 45379209363,
-                  "onLoad": 45382467109,
-                  "endOfTrace": 45387822490
+                  "navStart": 48527000969,
+                  "fCP": 48554021597,
+                  "fMP": 48554021606,
+                  "onLoad": 48534929083,
+                  "endOfTrace": 48557014086
                 },
                 "timings": {
                   "navStart": 0,
-                  "fCP": 6092.291,
-                  "fMP": 6092.301,
-                  "onLoad": 9350.047,
-                  "endOfTrace": 14705.428
+                  "fCP": 27020.628,
+                  "fMP": 27020.637,
+                  "onLoad": 7928.114,
+                  "endOfTrace": 30013.117
                 },
-                "fmpFellBack": false
+                "fmpFellBack": true
               }
             },
             "scoringMode": "numeric",
@@ -5652,284 +5404,144 @@
             "description": "First meaningful paint",
             "helpText": "First meaningful paint measures when the primary content of a page is visible. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint)."
           },
-          "score": 20
+          "score": 0
         },
         {
           "id": "first-interactive",
           "weight": 5,
           "group": "perf-metric",
           "result": {
-            "score": 53,
-            "displayValue": "9,390 ms",
-            "rawValue": 9393.943,
-            "extendedInfo": {
-              "value": {
-                "timeInMs": 9393.943,
-                "timestamp": 45382511005
-              }
-            },
+            "score": null,
+            "displayValue": "",
+            "rawValue": null,
+            "error": true,
+            "debugString": "Audit error: trace not at least 5 seconds longer than FMP",
             "scoringMode": "numeric",
             "name": "first-interactive",
             "category": "Performance",
             "description": "First Interactive (beta)",
             "helpText": "First Interactive marks the time at which the page is minimally interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-interactive)."
           },
-          "score": 53
+          "score": 0
         },
         {
           "id": "consistently-interactive",
           "weight": 5,
           "group": "perf-metric",
           "result": {
-            "score": 53,
-            "displayValue": "9,390 ms",
-            "rawValue": 9393.943,
-            "extendedInfo": {
-              "value": {
-                "cpuQuietPeriod": {
-                  "start": 45382511.005,
-                  "end": 45387822.49
-                },
-                "networkQuietPeriod": {
-                  "start": 45381394.689,
-                  "end": 45387822.49
-                },
-                "cpuQuietPeriods": [
-                  {
-                    "start": 45382511.005,
-                    "end": 45387822.49
-                  }
-                ],
-                "networkQuietPeriods": [
-                  {
-                    "start": 45381394.689,
-                    "end": 45387822.49
-                  }
-                ],
-                "timestamp": 45382511005,
-                "timeInMs": 9393.943
-              }
-            },
+            "score": null,
+            "displayValue": "",
+            "rawValue": null,
+            "error": true,
+            "debugString": "Audit error: Main thread activity continued through the end of the trace recording. Consistently Interactive requires a minimum of 5 seconds of both main thread idle and network idle.",
             "scoringMode": "numeric",
             "name": "consistently-interactive",
             "category": "Performance",
             "description": "Consistently Interactive (beta)",
             "helpText": "Consistently Interactive marks the time at which the page is fully interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/consistently-interactive)."
           },
-          "score": 53
+          "score": 0
         },
         {
           "id": "speed-index-metric",
           "weight": 1,
           "group": "perf-metric",
           "result": {
-            "score": 22,
-            "displayValue": "9,525",
-            "rawValue": 9525,
+            "score": 1,
+            "displayValue": "27,117",
+            "rawValue": 27117,
             "optimalValue": "< 1,250",
             "extendedInfo": {
               "value": {
                 "timings": {
-                  "firstVisualChange": 9423,
-                  "visuallyReady": 9606.892999999225,
-                  "visuallyComplete": 9723,
-                  "speedIndex": 9667.024140000867,
-                  "perceptualSpeedIndex": 9524.81849753695
+                  "firstVisualChange": 27056,
+                  "visuallyReady": 27370.091000005603,
+                  "visuallyComplete": 27654,
+                  "speedIndex": 27075.254620002877,
+                  "perceptualSpeedIndex": 27117.016917761583
                 },
                 "timestamps": {
-                  "firstVisualChange": 45382540062,
-                  "visuallyReady": 45382723955,
-                  "visuallyComplete": 45382840062,
-                  "speedIndex": 45382784086.14,
-                  "perceptualSpeedIndex": 45382641880.497536
+                  "firstVisualChange": 48554056969,
+                  "visuallyReady": 48554371060,
+                  "visuallyComplete": 48554654969,
+                  "speedIndex": 48554076223.619995,
+                  "perceptualSpeedIndex": 48554117985.91776
                 },
                 "frames": [
                   {
-                    "timestamp": 45373117.062,
+                    "timestamp": 48527000.969,
                     "progress": 0
                   },
                   {
-                    "timestamp": 45379221.004,
-                    "progress": 0
+                    "timestamp": 48554057.713,
+                    "progress": 84.77666954234583
                   },
                   {
-                    "timestamp": 45379538.086,
-                    "progress": 0
+                    "timestamp": 48554371.06,
+                    "progress": 94.6016774494397
                   },
                   {
-                    "timestamp": 45379554.337,
-                    "progress": 0
+                    "timestamp": 48554387.959,
+                    "progress": 94.6016774494397
                   },
                   {
-                    "timestamp": 45379585.795,
-                    "progress": 0
+                    "timestamp": 48554420.766,
+                    "progress": 94.99841234875043
                   },
                   {
-                    "timestamp": 45379602.419,
-                    "progress": 0
+                    "timestamp": 48554437.715,
+                    "progress": 94.99841234875043
                   },
                   {
-                    "timestamp": 45379607.391,
-                    "progress": 0
+                    "timestamp": 48554454.373,
+                    "progress": 94.99841234875043
                   },
                   {
-                    "timestamp": 45379634.74,
-                    "progress": 0
+                    "timestamp": 48554471.004,
+                    "progress": 94.99841234875043
                   },
                   {
-                    "timestamp": 45379648.937,
-                    "progress": 0
+                    "timestamp": 48554487.608,
+                    "progress": 94.99841234875043
                   },
                   {
-                    "timestamp": 45379668.104,
-                    "progress": 0
+                    "timestamp": 48554504.112,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379687.903,
-                    "progress": 0
+                    "timestamp": 48554522.07,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379703.971,
-                    "progress": 0
+                    "timestamp": 48554538.121,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379721.224,
-                    "progress": 0
+                    "timestamp": 48554555.172,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379738.064,
-                    "progress": 0
+                    "timestamp": 48554571.833,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379754.265,
-                    "progress": 0
+                    "timestamp": 48554589.255,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379771.492,
-                    "progress": 0
+                    "timestamp": 48554605.083,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379788.154,
-                    "progress": 0
+                    "timestamp": 48554621.741,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379804.178,
-                    "progress": 0
+                    "timestamp": 48554639.083,
+                    "progress": 96.21936538194065
                   },
                   {
-                    "timestamp": 45379821.641,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45380961.769,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45381145.644,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45381323.837,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45381427.429,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45381481.313,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45381896.611,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45382409.503,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45382520.906,
-                    "progress": 0
-                  },
-                  {
-                    "timestamp": 45382540.526,
-                    "progress": 14.568716153310097
-                  },
-                  {
-                    "timestamp": 45382556.931,
-                    "progress": 19.015485063013017
-                  },
-                  {
-                    "timestamp": 45382573.52,
-                    "progress": 29.757422992647022
-                  },
-                  {
-                    "timestamp": 45382590.587,
-                    "progress": 35.623938291013246
-                  },
-                  {
-                    "timestamp": 45382607.071,
-                    "progress": 41.29582186378221
-                  },
-                  {
-                    "timestamp": 45382623.458,
-                    "progress": 46.970133784907546
-                  },
-                  {
-                    "timestamp": 45382640.277,
-                    "progress": 58.88021055519884
-                  },
-                  {
-                    "timestamp": 45382657.891,
-                    "progress": 64.18530934780507
-                  },
-                  {
-                    "timestamp": 45382673.69,
-                    "progress": 69.54178298278299
-                  },
-                  {
-                    "timestamp": 45382690.699,
-                    "progress": 78.91653862204366
-                  },
-                  {
-                    "timestamp": 45382706.719,
-                    "progress": 83.01119768292698
-                  },
-                  {
-                    "timestamp": 45382723.955,
-                    "progress": 87.08096527188003
-                  },
-                  {
-                    "timestamp": 45382740.334,
-                    "progress": 90.46466527910572
-                  },
-                  {
-                    "timestamp": 45382757.225,
-                    "progress": 95.39174854350155
-                  },
-                  {
-                    "timestamp": 45382773.793,
-                    "progress": 95.39174854350155
-                  },
-                  {
-                    "timestamp": 45382791.013,
-                    "progress": 95.39174854350155
-                  },
-                  {
-                    "timestamp": 45382807.207,
-                    "progress": 95.39174854350155
-                  },
-                  {
-                    "timestamp": 45382823.355,
-                    "progress": 95.39174854350155
-                  },
-                  {
-                    "timestamp": 45382840.121,
-                    "progress": 95.39174854350155
-                  },
-                  {
-                    "timestamp": 45382858.169,
+                    "timestamp": 48554655.387,
                     "progress": 100
                   }
                 ]
@@ -5941,7 +5553,7 @@
             "description": "Perceptual Speed Index",
             "helpText": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/speed-index)."
           },
-          "score": 22
+          "score": 1
         },
         {
           "id": "estimated-input-latency",
@@ -5949,8 +5561,8 @@
           "group": "perf-metric",
           "result": {
             "score": 100,
-            "displayValue": "19 ms",
-            "rawValue": 18.7,
+            "displayValue": "16 ms",
+            "rawValue": 16,
             "optimalValue": "< 50 ms",
             "extendedInfo": {
               "value": [
@@ -5964,15 +5576,15 @@
                 },
                 {
                   "percentile": 0.9,
-                  "time": 18.731951428571822
+                  "time": 16
                 },
                 {
                   "percentile": 0.99,
-                  "time": 205.71473000001424
+                  "time": 16
                 },
                 {
                   "percentile": 1,
-                  "time": 291.8460000000141
+                  "time": 23.843000000000302
                 }
               ]
             },
@@ -5990,41 +5602,41 @@
           "group": "perf-hint",
           "result": {
             "score": 0,
-            "displayValue": "6 resources delayed first paint by 2,485 ms",
-            "rawValue": 2485,
+            "displayValue": "6 resources delayed first paint by 2,487 ms",
+            "rawValue": 2487,
             "extendedInfo": {
               "value": {
-                "wastedMs": "2,485 ms",
+                "wastedMs": "2,487 ms",
                 "results": [
                   {
                     "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-                    "totalKb": "0.56 KB",
-                    "totalMs": "808 ms"
+                    "totalKb": "0.55 KB",
+                    "totalMs": "818 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/css/pin.css",
                     "totalKb": "1.45 KB",
-                    "totalMs": "657 ms"
+                    "totalMs": "635 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/css/lightbox.css",
                     "totalKb": "0.86 KB",
-                    "totalMs": "672 ms"
+                    "totalMs": "659 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/css/loader.css",
                     "totalKb": "0.64 KB",
-                    "totalMs": "689 ms"
+                    "totalMs": "675 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/lib/bootstrap/css/bootstrap.css",
                     "totalKb": "84.43 KB",
-                    "totalMs": "2,485 ms"
+                    "totalMs": "2,487 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/apps/articles/css/article.css",
                     "totalKb": "4.83 KB",
-                    "totalMs": "1,396 ms"
+                    "totalMs": "1,366 ms"
                   }
                 ]
               }
@@ -6063,11 +5675,11 @@
                   },
                   {
                     "type": "text",
-                    "text": "0.56 KB"
+                    "text": "0.55 KB"
                   },
                   {
                     "type": "text",
-                    "text": "808 ms"
+                    "text": "818 ms"
                   }
                 ],
                 [
@@ -6081,7 +5693,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "657 ms"
+                    "text": "635 ms"
                   }
                 ],
                 [
@@ -6095,7 +5707,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "672 ms"
+                    "text": "659 ms"
                   }
                 ],
                 [
@@ -6109,7 +5721,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "689 ms"
+                    "text": "675 ms"
                   }
                 ],
                 [
@@ -6123,7 +5735,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2,485 ms"
+                    "text": "2,487 ms"
                   }
                 ],
                 [
@@ -6137,7 +5749,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1,396 ms"
+                    "text": "1,366 ms"
                   }
                 ]
               ]
@@ -6151,56 +5763,56 @@
           "group": "perf-hint",
           "result": {
             "score": 0,
-            "displayValue": "9 resources delayed first paint by 4,364 ms",
-            "rawValue": 4364,
+            "displayValue": "9 resources delayed first paint by 4,366 ms",
+            "rawValue": 4366,
             "extendedInfo": {
               "value": {
-                "wastedMs": "4,364 ms",
+                "wastedMs": "4,366 ms",
                 "results": [
                   {
                     "url": "https://www.glegoux.com/static/js/jquery.min.js",
                     "totalKb": "93.9 KB",
-                    "totalMs": "2,481 ms"
+                    "totalMs": "2,506 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/jquery-ui.js",
                     "totalKb": "425.99 KB",
-                    "totalMs": "4,364 ms"
+                    "totalMs": "4,366 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/skel.min.js",
                     "totalKb": "23.56 KB",
-                    "totalMs": "1,916 ms"
+                    "totalMs": "1,902 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/skel-layers.min.js",
                     "totalKb": "19.62 KB",
-                    "totalMs": "1,837 ms"
+                    "totalMs": "1,814 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/init.js",
                     "totalKb": "2.78 KB",
-                    "totalMs": "2,028 ms"
+                    "totalMs": "1,997 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/jquery.cookie.js",
                     "totalKb": "3.4 KB",
-                    "totalMs": "2,497 ms"
+                    "totalMs": "2,466 ms"
                   },
                   {
                     "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
                     "totalKb": "18.98 KB",
-                    "totalMs": "1,115 ms"
+                    "totalMs": "1,132 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/browser.js",
                     "totalKb": "2.13 KB",
-                    "totalMs": "2,529 ms"
+                    "totalMs": "2,523 ms"
                   },
                   {
                     "url": "https://www.glegoux.com/static/js/layout.js",
                     "totalKb": "1 KB",
-                    "totalMs": "2,608 ms"
+                    "totalMs": "2,570 ms"
                   }
                 ]
               }
@@ -6243,7 +5855,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2,481 ms"
+                    "text": "2,506 ms"
                   }
                 ],
                 [
@@ -6257,7 +5869,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "4,364 ms"
+                    "text": "4,366 ms"
                   }
                 ],
                 [
@@ -6271,7 +5883,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1,916 ms"
+                    "text": "1,902 ms"
                   }
                 ],
                 [
@@ -6285,7 +5897,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1,837 ms"
+                    "text": "1,814 ms"
                   }
                 ],
                 [
@@ -6299,7 +5911,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2,028 ms"
+                    "text": "1,997 ms"
                   }
                 ],
                 [
@@ -6313,7 +5925,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2,497 ms"
+                    "text": "2,466 ms"
                   }
                 ],
                 [
@@ -6327,7 +5939,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "1,115 ms"
+                    "text": "1,132 ms"
                   }
                 ],
                 [
@@ -6341,7 +5953,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2,529 ms"
+                    "text": "2,523 ms"
                   }
                 ],
                 [
@@ -6355,7 +5967,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2,608 ms"
+                    "text": "2,570 ms"
                   }
                 ]
               ]
@@ -6419,51 +6031,19 @@
           "weight": 0,
           "group": "perf-hint",
           "result": {
-            "score": 100,
+            "score": null,
             "displayValue": "",
-            "rawValue": 0,
-            "extendedInfo": {
-              "value": {
-                "wastedMs": 0,
-                "wastedKb": 0,
-                "results": []
-              }
-            },
+            "rawValue": null,
+            "error": true,
+            "debugString": "Audit error: trace not at least 5 seconds longer than FMP",
             "scoringMode": "binary",
             "informative": true,
             "name": "offscreen-images",
             "category": "Images",
             "description": "Offscreen images",
-            "helpText": "Consider lazy-loading offscreen images to improve page load speed and time to interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/offscreen-images).",
-            "details": {
-              "type": "table",
-              "header": "View Details",
-              "itemHeaders": [
-                {
-                  "type": "text",
-                  "itemType": "thumbnail",
-                  "text": ""
-                },
-                {
-                  "type": "text",
-                  "itemType": "url",
-                  "text": "URL"
-                },
-                {
-                  "type": "text",
-                  "itemType": "text",
-                  "text": "Original"
-                },
-                {
-                  "type": "text",
-                  "itemType": "text",
-                  "text": "Potential Savings"
-                }
-              ],
-              "items": []
-            }
+            "helpText": "Consider lazy-loading offscreen images to improve page load speed and time to interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/offscreen-images)."
           },
-          "score": 100
+          "score": 0
         },
         {
           "id": "uses-optimized-images",
@@ -6886,7 +6466,7 @@
           "result": {
             "score": 100,
             "displayValue": "Total size was 875 KB",
-            "rawValue": 896505,
+            "rawValue": 896489,
             "optimalValue": "< 1,600 KB",
             "extendedInfo": {
               "value": {
@@ -7196,317 +6776,298 @@
           "group": "perf-info",
           "result": {
             "score": false,
-            "displayValue": "27",
+            "displayValue": "24",
             "rawValue": false,
             "optimalValue": 0,
             "extendedInfo": {
               "value": {
                 "chains": {
-                  "11137.1:redirected.0": {
+                  "28671.1:redirected.0": {
                     "request": {
                       "url": "https://glegoux.com/articles/",
-                      "startTime": 45373.119525,
-                      "endTime": 45373.774399,
-                      "responseReceivedTime": 45373.772686,
+                      "startTime": 48527.002722,
+                      "endTime": 48527.659045,
+                      "responseReceivedTime": 48527.657487,
                       "transferSize": 280
                     },
                     "children": {
-                      "11137.1:redirected.1": {
+                      "28671.1:redirected.1": {
                         "request": {
                           "url": "http://www.glegoux.com/articles/",
-                          "startTime": 45373.774696,
-                          "endTime": 45373.775589,
-                          "responseReceivedTime": 45373.774703,
+                          "startTime": 48527.659335,
+                          "endTime": 48527.660305,
+                          "responseReceivedTime": 48527.659341,
                           "transferSize": 0
                         },
                         "children": {
-                          "11137.1": {
+                          "28671.1": {
                             "request": {
                               "url": "https://www.glegoux.com/articles/",
-                              "startTime": 45373.775803,
-                              "endTime": 45374.448738,
-                              "responseReceivedTime": 45374.431922,
-                              "transferSize": 4159
+                              "startTime": 48527.660495,
+                              "endTime": 48528.325308,
+                              "responseReceivedTime": 48528.309328,
+                              "transferSize": 4160
                             },
                             "children": {
-                              "11137.2": {
+                              "28671.2": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/jquery.min.js",
-                                  "startTime": 45374.471072,
-                                  "endTime": 45376.952023,
-                                  "responseReceivedTime": 45375.036376,
+                                  "startTime": 48528.346313,
+                                  "endTime": 48530.852762,
+                                  "responseReceivedTime": 48528.913421,
                                   "transferSize": 96150
                                 },
-                                "children": {}
+                                "children": {
+                                  "28671.64": {
+                                    "request": {
+                                      "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
+                                      "startTime": 48534.901214,
+                                      "endTime": 48535.596868,
+                                      "responseReceivedTime": 48535.469762,
+                                      "transferSize": 13144
+                                    },
+                                    "children": {}
+                                  },
+                                  "28671.62": {
+                                    "request": {
+                                      "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
+                                      "startTime": 48534.907486,
+                                      "endTime": 48535.612957,
+                                      "responseReceivedTime": 48535.485247,
+                                      "transferSize": 13242
+                                    },
+                                    "children": {}
+                                  },
+                                  "28671.58": {
+                                    "request": {
+                                      "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
+                                      "startTime": 48534.915955,
+                                      "endTime": 48535.50983,
+                                      "responseReceivedTime": 48535.501634,
+                                      "transferSize": 406
+                                    },
+                                    "children": {}
+                                  }
+                                }
                               },
-                              "11137.3": {
+                              "28671.3": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/jquery-ui.js",
-                                  "startTime": 45374.471619,
-                                  "endTime": 45378.835532,
-                                  "responseReceivedTime": 45375.044651,
+                                  "startTime": 48528.34697,
+                                  "endTime": 48532.712023,
+                                  "responseReceivedTime": 48528.921379,
                                   "transferSize": 436209
                                 },
                                 "children": {}
                               },
-                              "11137.4": {
+                              "28671.4": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/skel.min.js",
-                                  "startTime": 45374.472182,
-                                  "endTime": 45376.387009,
-                                  "responseReceivedTime": 45375.744029,
+                                  "startTime": 48528.347227,
+                                  "endTime": 48530.248201,
+                                  "responseReceivedTime": 48529.604404,
                                   "transferSize": 24130
                                 },
                                 "children": {
-                                  "11137.30": {
+                                  "28671.30": {
                                     "request": {
                                       "url": "https://www.glegoux.com/static/css/style.css",
-                                      "startTime": 45378.989546,
-                                      "endTime": 45379.748629,
-                                      "responseReceivedTime": 45379.557842,
+                                      "startTime": 48532.873607,
+                                      "endTime": 48533.63422,
+                                      "responseReceivedTime": 48533.44315,
                                       "transferSize": 24009
                                     },
                                     "children": {}
                                   },
-                                  "11137.31": {
+                                  "28671.31": {
                                     "request": {
                                       "url": "https://www.glegoux.com/static/css/style-xlarge.css",
-                                      "startTime": 45378.990538,
-                                      "endTime": 45379.566961,
-                                      "responseReceivedTime": 45379.566609,
+                                      "startTime": 48532.874318,
+                                      "endTime": 48533.451227,
+                                      "responseReceivedTime": 48533.450862,
                                       "transferSize": 414
                                     },
                                     "children": {}
                                   },
-                                  "11137.32": {
+                                  "28671.32": {
                                     "request": {
                                       "url": "https://www.glegoux.com/static/css/style-large.css",
-                                      "startTime": 45378.990975,
-                                      "endTime": 45379.574386,
-                                      "responseReceivedTime": 45379.574172,
+                                      "startTime": 48532.874867,
+                                      "endTime": 48533.459547,
+                                      "responseReceivedTime": 48533.459312,
                                       "transferSize": 346
                                     },
                                     "children": {}
                                   },
-                                  "11137.33": {
+                                  "28671.33": {
                                     "request": {
                                       "url": "https://www.glegoux.com/static/css/style-medium.css",
-                                      "startTime": 45378.991863,
-                                      "endTime": 45379.637662,
-                                      "responseReceivedTime": 45379.581808,
+                                      "startTime": 48532.875276,
+                                      "endTime": 48533.522485,
+                                      "responseReceivedTime": 48533.466951,
                                       "transferSize": 3071
                                     },
                                     "children": {}
                                   },
-                                  "11137.34": {
+                                  "28671.34": {
                                     "request": {
                                       "url": "https://www.glegoux.com/static/css/style-small.css",
-                                      "startTime": 45378.992155,
-                                      "endTime": 45379.621902,
-                                      "responseReceivedTime": 45379.590074,
+                                      "startTime": 48532.875549,
+                                      "endTime": 48533.506573,
+                                      "responseReceivedTime": 48533.475418,
                                       "transferSize": 2196
                                     },
                                     "children": {}
                                   },
-                                  "11137.35": {
+                                  "28671.35": {
                                     "request": {
                                       "url": "https://www.glegoux.com/static/css/style-xsmall.css",
-                                      "startTime": 45378.992729,
-                                      "endTime": 45379.598236,
-                                      "responseReceivedTime": 45379.597901,
+                                      "startTime": 48532.876218,
+                                      "endTime": 48533.482806,
+                                      "responseReceivedTime": 48533.482445,
                                       "transferSize": 1119
                                     },
                                     "children": {}
                                   }
                                 }
                               },
-                              "11137.5": {
+                              "28671.5": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/skel-layers.min.js",
-                                  "startTime": 45374.472509,
-                                  "endTime": 45376.308033,
-                                  "responseReceivedTime": 45375.767485,
+                                  "startTime": 48528.34775,
+                                  "endTime": 48530.160701,
+                                  "responseReceivedTime": 48529.628777,
                                   "transferSize": 20088
                                 },
                                 "children": {}
                               },
-                              "11137.6": {
+                              "28671.6": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/init.js",
-                                  "startTime": 45374.472942,
-                                  "endTime": 45376.499478,
-                                  "responseReceivedTime": 45376.466498,
+                                  "startTime": 48528.348098,
+                                  "endTime": 48530.343441,
+                                  "responseReceivedTime": 48530.312026,
                                   "transferSize": 2851
                                 },
                                 "children": {}
                               },
-                              "11137.7": {
+                              "28671.7": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/jquery.cookie.js",
-                                  "startTime": 45374.47335,
-                                  "endTime": 45376.967757,
-                                  "responseReceivedTime": 45376.904259,
+                                  "startTime": 48528.348335,
+                                  "endTime": 48530.812558,
+                                  "responseReceivedTime": 48530.749216,
                                   "transferSize": 3484
                                 },
                                 "children": {}
                               },
-                              "11137.8": {
+                              "28671.8": {
                                 "request": {
                                   "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
-                                  "startTime": 45374.473697,
-                                  "endTime": 45375.585703,
-                                  "responseReceivedTime": 45375.195179,
+                                  "startTime": 48528.348632,
+                                  "endTime": 48529.478597,
+                                  "responseReceivedTime": 48529.088065,
                                   "transferSize": 19432
                                 },
                                 "children": {}
                               },
-                              "11137.9": {
+                              "28671.9": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/browser.js",
-                                  "startTime": 45374.474262,
-                                  "endTime": 45377.000248,
-                                  "responseReceivedTime": 45376.983418,
+                                  "startTime": 48528.348917,
+                                  "endTime": 48530.868836,
+                                  "responseReceivedTime": 48530.84458,
                                   "transferSize": 2179
                                 },
                                 "children": {}
                               },
-                              "11137.10": {
+                              "28671.10": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/js/layout.js",
-                                  "startTime": 45374.474529,
-                                  "endTime": 45377.079465,
-                                  "responseReceivedTime": 45377.079106,
+                                  "startTime": 48528.349155,
+                                  "endTime": 48530.916685,
+                                  "responseReceivedTime": 48530.916274,
                                   "transferSize": 1024
                                 },
                                 "children": {}
                               },
-                              "11137.11": {
+                              "28671.11": {
                                 "request": {
                                   "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-                                  "startTime": 45374.475163,
-                                  "endTime": 45375.283565,
-                                  "responseReceivedTime": 45375.282943,
-                                  "transferSize": 572
+                                  "startTime": 48528.349579,
+                                  "endTime": 48529.167762,
+                                  "responseReceivedTime": 48529.167274,
+                                  "transferSize": 563
                                 },
                                 "children": {}
                               },
-                              "11137.12": {
+                              "28671.12": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/css/pin.css",
-                                  "startTime": 45374.475562,
-                                  "endTime": 45375.132496,
-                                  "responseReceivedTime": 45375.131906,
+                                  "startTime": 48528.349826,
+                                  "endTime": 48528.98469,
+                                  "responseReceivedTime": 48528.984234,
                                   "transferSize": 1489
                                 },
                                 "children": {}
                               },
-                              "11137.13": {
+                              "28671.13": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/css/lightbox.css",
-                                  "startTime": 45374.476208,
-                                  "endTime": 45375.147519,
-                                  "responseReceivedTime": 45375.147095,
+                                  "startTime": 48528.350013,
+                                  "endTime": 48529.008581,
+                                  "responseReceivedTime": 48529.008224,
                                   "transferSize": 880
                                 },
                                 "children": {}
                               },
-                              "11137.14": {
+                              "28671.14": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/css/loader.css",
-                                  "startTime": 45374.476506,
-                                  "endTime": 45375.164419,
-                                  "responseReceivedTime": 45375.164017,
+                                  "startTime": 48528.350311,
+                                  "endTime": 48529.024999,
+                                  "responseReceivedTime": 48529.02453,
                                   "transferSize": 652
                                 },
                                 "children": {}
                               },
-                              "11137.15": {
+                              "28671.15": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/lib/bootstrap/css/bootstrap.css",
-                                  "startTime": 45374.477053,
-                                  "endTime": 45376.959991,
-                                  "responseReceivedTime": 45375.179313,
+                                  "startTime": 48528.35052,
+                                  "endTime": 48530.83645,
+                                  "responseReceivedTime": 48529.048428,
                                   "transferSize": 86460
                                 },
                                 "children": {}
                               },
-                              "11137.16": {
+                              "28671.16": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/apps/articles/css/article.css",
-                                  "startTime": 45374.477422,
-                                  "endTime": 45375.871486,
-                                  "responseReceivedTime": 45375.727941,
+                                  "startTime": 48528.350729,
+                                  "endTime": 48529.715562,
+                                  "responseReceivedTime": 48529.580757,
                                   "transferSize": 4950
                                 },
                                 "children": {}
                               },
-                              "11137.56": {
+                              "28671.56": {
                                 "request": {
                                   "url": "https://www.glegoux.com/static/css/font-awesome.min.css",
-                                  "startTime": 45379.751294,
-                                  "endTime": 45380.662957,
-                                  "responseReceivedTime": 45380.345,
+                                  "startTime": 48533.637365,
+                                  "endTime": 48534.547566,
+                                  "responseReceivedTime": 48534.229846,
                                   "transferSize": 31350
                                 },
                                 "children": {}
                               },
-                              "11137.57": {
+                              "28671.57": {
                                 "request": {
                                   "url": "https://fonts.googleapis.com/css?family=Raleway:700,400",
-                                  "startTime": 45379.751722,
-                                  "endTime": 45380.337508,
-                                  "responseReceivedTime": 45380.337169,
+                                  "startTime": 48533.637808,
+                                  "endTime": 48534.222026,
+                                  "responseReceivedTime": 48534.221704,
                                   "transferSize": 553
-                                },
-                                "children": {}
-                              },
-                              "11137.62": {
-                                "request": {
-                                  "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
-                                  "startTime": 45380.682251,
-                                  "endTime": 45381.378259,
-                                  "responseReceivedTime": 45381.250455,
-                                  "transferSize": 13388
-                                },
-                                "children": {}
-                              },
-                              "11137.64": {
-                                "request": {
-                                  "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
-                                  "startTime": 45380.688803,
-                                  "endTime": 45381.394689,
-                                  "responseReceivedTime": 45381.266837,
-                                  "transferSize": 12998
-                                },
-                                "children": {}
-                              },
-                              "11137.58": {
-                                "request": {
-                                  "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
-                                  "startTime": 45380.69912,
-                                  "endTime": 45381.284424,
-                                  "responseReceivedTime": 45381.282678,
-                                  "transferSize": 406
-                                },
-                                "children": {}
-                              },
-                              "11137.59": {
-                                "request": {
-                                  "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
-                                  "startTime": 45381.285412,
-                                  "endTime": 45381.857035,
-                                  "responseReceivedTime": 45381.855108,
-                                  "transferSize": 406
-                                },
-                                "children": {}
-                              },
-                              "11137.60": {
-                                "request": {
-                                  "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
-                                  "startTime": 45381.858377,
-                                  "endTime": 45382.428792,
-                                  "responseReceivedTime": 45382.426749,
-                                  "transferSize": 406
                                 },
                                 "children": {}
                               }
@@ -7515,11 +7076,31 @@
                         }
                       }
                     }
+                  },
+                  "28671.59": {
+                    "request": {
+                      "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
+                      "startTime": 48535.511119,
+                      "endTime": 48536.082865,
+                      "responseReceivedTime": 48536.081105,
+                      "transferSize": 406
+                    },
+                    "children": {}
+                  },
+                  "28671.60": {
+                    "request": {
+                      "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
+                      "startTime": 48536.083627,
+                      "endTime": 48536.655151,
+                      "responseReceivedTime": 48536.65374,
+                      "transferSize": 406
+                    },
+                    "children": {}
                   }
                 },
                 "longestChain": {
-                  "duration": 9309.266999996908,
-                  "length": 4,
+                  "duration": 9652.429000001575,
+                  "length": 1,
                   "transferSize": 406
                 }
               }
@@ -7537,311 +7118,292 @@
                 "text": "View critical network waterfall:"
               },
               "chains": {
-                "11137.1:redirected.0": {
+                "28671.1:redirected.0": {
                   "request": {
                     "url": "https://glegoux.com/articles/",
-                    "startTime": 45373.119525,
-                    "endTime": 45373.774399,
-                    "responseReceivedTime": 45373.772686,
+                    "startTime": 48527.002722,
+                    "endTime": 48527.659045,
+                    "responseReceivedTime": 48527.657487,
                     "transferSize": 280
                   },
                   "children": {
-                    "11137.1:redirected.1": {
+                    "28671.1:redirected.1": {
                       "request": {
                         "url": "http://www.glegoux.com/articles/",
-                        "startTime": 45373.774696,
-                        "endTime": 45373.775589,
-                        "responseReceivedTime": 45373.774703,
+                        "startTime": 48527.659335,
+                        "endTime": 48527.660305,
+                        "responseReceivedTime": 48527.659341,
                         "transferSize": 0
                       },
                       "children": {
-                        "11137.1": {
+                        "28671.1": {
                           "request": {
                             "url": "https://www.glegoux.com/articles/",
-                            "startTime": 45373.775803,
-                            "endTime": 45374.448738,
-                            "responseReceivedTime": 45374.431922,
-                            "transferSize": 4159
+                            "startTime": 48527.660495,
+                            "endTime": 48528.325308,
+                            "responseReceivedTime": 48528.309328,
+                            "transferSize": 4160
                           },
                           "children": {
-                            "11137.2": {
+                            "28671.2": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/jquery.min.js",
-                                "startTime": 45374.471072,
-                                "endTime": 45376.952023,
-                                "responseReceivedTime": 45375.036376,
+                                "startTime": 48528.346313,
+                                "endTime": 48530.852762,
+                                "responseReceivedTime": 48528.913421,
                                 "transferSize": 96150
                               },
-                              "children": {}
+                              "children": {
+                                "28671.64": {
+                                  "request": {
+                                    "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
+                                    "startTime": 48534.901214,
+                                    "endTime": 48535.596868,
+                                    "responseReceivedTime": 48535.469762,
+                                    "transferSize": 13144
+                                  },
+                                  "children": {}
+                                },
+                                "28671.62": {
+                                  "request": {
+                                    "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
+                                    "startTime": 48534.907486,
+                                    "endTime": 48535.612957,
+                                    "responseReceivedTime": 48535.485247,
+                                    "transferSize": 13242
+                                  },
+                                  "children": {}
+                                },
+                                "28671.58": {
+                                  "request": {
+                                    "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
+                                    "startTime": 48534.915955,
+                                    "endTime": 48535.50983,
+                                    "responseReceivedTime": 48535.501634,
+                                    "transferSize": 406
+                                  },
+                                  "children": {}
+                                }
+                              }
                             },
-                            "11137.3": {
+                            "28671.3": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/jquery-ui.js",
-                                "startTime": 45374.471619,
-                                "endTime": 45378.835532,
-                                "responseReceivedTime": 45375.044651,
+                                "startTime": 48528.34697,
+                                "endTime": 48532.712023,
+                                "responseReceivedTime": 48528.921379,
                                 "transferSize": 436209
                               },
                               "children": {}
                             },
-                            "11137.4": {
+                            "28671.4": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/skel.min.js",
-                                "startTime": 45374.472182,
-                                "endTime": 45376.387009,
-                                "responseReceivedTime": 45375.744029,
+                                "startTime": 48528.347227,
+                                "endTime": 48530.248201,
+                                "responseReceivedTime": 48529.604404,
                                 "transferSize": 24130
                               },
                               "children": {
-                                "11137.30": {
+                                "28671.30": {
                                   "request": {
                                     "url": "https://www.glegoux.com/static/css/style.css",
-                                    "startTime": 45378.989546,
-                                    "endTime": 45379.748629,
-                                    "responseReceivedTime": 45379.557842,
+                                    "startTime": 48532.873607,
+                                    "endTime": 48533.63422,
+                                    "responseReceivedTime": 48533.44315,
                                     "transferSize": 24009
                                   },
                                   "children": {}
                                 },
-                                "11137.31": {
+                                "28671.31": {
                                   "request": {
                                     "url": "https://www.glegoux.com/static/css/style-xlarge.css",
-                                    "startTime": 45378.990538,
-                                    "endTime": 45379.566961,
-                                    "responseReceivedTime": 45379.566609,
+                                    "startTime": 48532.874318,
+                                    "endTime": 48533.451227,
+                                    "responseReceivedTime": 48533.450862,
                                     "transferSize": 414
                                   },
                                   "children": {}
                                 },
-                                "11137.32": {
+                                "28671.32": {
                                   "request": {
                                     "url": "https://www.glegoux.com/static/css/style-large.css",
-                                    "startTime": 45378.990975,
-                                    "endTime": 45379.574386,
-                                    "responseReceivedTime": 45379.574172,
+                                    "startTime": 48532.874867,
+                                    "endTime": 48533.459547,
+                                    "responseReceivedTime": 48533.459312,
                                     "transferSize": 346
                                   },
                                   "children": {}
                                 },
-                                "11137.33": {
+                                "28671.33": {
                                   "request": {
                                     "url": "https://www.glegoux.com/static/css/style-medium.css",
-                                    "startTime": 45378.991863,
-                                    "endTime": 45379.637662,
-                                    "responseReceivedTime": 45379.581808,
+                                    "startTime": 48532.875276,
+                                    "endTime": 48533.522485,
+                                    "responseReceivedTime": 48533.466951,
                                     "transferSize": 3071
                                   },
                                   "children": {}
                                 },
-                                "11137.34": {
+                                "28671.34": {
                                   "request": {
                                     "url": "https://www.glegoux.com/static/css/style-small.css",
-                                    "startTime": 45378.992155,
-                                    "endTime": 45379.621902,
-                                    "responseReceivedTime": 45379.590074,
+                                    "startTime": 48532.875549,
+                                    "endTime": 48533.506573,
+                                    "responseReceivedTime": 48533.475418,
                                     "transferSize": 2196
                                   },
                                   "children": {}
                                 },
-                                "11137.35": {
+                                "28671.35": {
                                   "request": {
                                     "url": "https://www.glegoux.com/static/css/style-xsmall.css",
-                                    "startTime": 45378.992729,
-                                    "endTime": 45379.598236,
-                                    "responseReceivedTime": 45379.597901,
+                                    "startTime": 48532.876218,
+                                    "endTime": 48533.482806,
+                                    "responseReceivedTime": 48533.482445,
                                     "transferSize": 1119
                                   },
                                   "children": {}
                                 }
                               }
                             },
-                            "11137.5": {
+                            "28671.5": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/skel-layers.min.js",
-                                "startTime": 45374.472509,
-                                "endTime": 45376.308033,
-                                "responseReceivedTime": 45375.767485,
+                                "startTime": 48528.34775,
+                                "endTime": 48530.160701,
+                                "responseReceivedTime": 48529.628777,
                                 "transferSize": 20088
                               },
                               "children": {}
                             },
-                            "11137.6": {
+                            "28671.6": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/init.js",
-                                "startTime": 45374.472942,
-                                "endTime": 45376.499478,
-                                "responseReceivedTime": 45376.466498,
+                                "startTime": 48528.348098,
+                                "endTime": 48530.343441,
+                                "responseReceivedTime": 48530.312026,
                                 "transferSize": 2851
                               },
                               "children": {}
                             },
-                            "11137.7": {
+                            "28671.7": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/jquery.cookie.js",
-                                "startTime": 45374.47335,
-                                "endTime": 45376.967757,
-                                "responseReceivedTime": 45376.904259,
+                                "startTime": 48528.348335,
+                                "endTime": 48530.812558,
+                                "responseReceivedTime": 48530.749216,
                                 "transferSize": 3484
                               },
                               "children": {}
                             },
-                            "11137.8": {
+                            "28671.8": {
                               "request": {
                                 "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML",
-                                "startTime": 45374.473697,
-                                "endTime": 45375.585703,
-                                "responseReceivedTime": 45375.195179,
+                                "startTime": 48528.348632,
+                                "endTime": 48529.478597,
+                                "responseReceivedTime": 48529.088065,
                                 "transferSize": 19432
                               },
                               "children": {}
                             },
-                            "11137.9": {
+                            "28671.9": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/browser.js",
-                                "startTime": 45374.474262,
-                                "endTime": 45377.000248,
-                                "responseReceivedTime": 45376.983418,
+                                "startTime": 48528.348917,
+                                "endTime": 48530.868836,
+                                "responseReceivedTime": 48530.84458,
                                 "transferSize": 2179
                               },
                               "children": {}
                             },
-                            "11137.10": {
+                            "28671.10": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/js/layout.js",
-                                "startTime": 45374.474529,
-                                "endTime": 45377.079465,
-                                "responseReceivedTime": 45377.079106,
+                                "startTime": 48528.349155,
+                                "endTime": 48530.916685,
+                                "responseReceivedTime": 48530.916274,
                                 "transferSize": 1024
                               },
                               "children": {}
                             },
-                            "11137.11": {
+                            "28671.11": {
                               "request": {
                                 "url": "https://fonts.googleapis.com/css?family=Reenie+Beanie:regular",
-                                "startTime": 45374.475163,
-                                "endTime": 45375.283565,
-                                "responseReceivedTime": 45375.282943,
-                                "transferSize": 572
+                                "startTime": 48528.349579,
+                                "endTime": 48529.167762,
+                                "responseReceivedTime": 48529.167274,
+                                "transferSize": 563
                               },
                               "children": {}
                             },
-                            "11137.12": {
+                            "28671.12": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/pin.css",
-                                "startTime": 45374.475562,
-                                "endTime": 45375.132496,
-                                "responseReceivedTime": 45375.131906,
+                                "startTime": 48528.349826,
+                                "endTime": 48528.98469,
+                                "responseReceivedTime": 48528.984234,
                                 "transferSize": 1489
                               },
                               "children": {}
                             },
-                            "11137.13": {
+                            "28671.13": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/lightbox.css",
-                                "startTime": 45374.476208,
-                                "endTime": 45375.147519,
-                                "responseReceivedTime": 45375.147095,
+                                "startTime": 48528.350013,
+                                "endTime": 48529.008581,
+                                "responseReceivedTime": 48529.008224,
                                 "transferSize": 880
                               },
                               "children": {}
                             },
-                            "11137.14": {
+                            "28671.14": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/loader.css",
-                                "startTime": 45374.476506,
-                                "endTime": 45375.164419,
-                                "responseReceivedTime": 45375.164017,
+                                "startTime": 48528.350311,
+                                "endTime": 48529.024999,
+                                "responseReceivedTime": 48529.02453,
                                 "transferSize": 652
                               },
                               "children": {}
                             },
-                            "11137.15": {
+                            "28671.15": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/lib/bootstrap/css/bootstrap.css",
-                                "startTime": 45374.477053,
-                                "endTime": 45376.959991,
-                                "responseReceivedTime": 45375.179313,
+                                "startTime": 48528.35052,
+                                "endTime": 48530.83645,
+                                "responseReceivedTime": 48529.048428,
                                 "transferSize": 86460
                               },
                               "children": {}
                             },
-                            "11137.16": {
+                            "28671.16": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/apps/articles/css/article.css",
-                                "startTime": 45374.477422,
-                                "endTime": 45375.871486,
-                                "responseReceivedTime": 45375.727941,
+                                "startTime": 48528.350729,
+                                "endTime": 48529.715562,
+                                "responseReceivedTime": 48529.580757,
                                 "transferSize": 4950
                               },
                               "children": {}
                             },
-                            "11137.56": {
+                            "28671.56": {
                               "request": {
                                 "url": "https://www.glegoux.com/static/css/font-awesome.min.css",
-                                "startTime": 45379.751294,
-                                "endTime": 45380.662957,
-                                "responseReceivedTime": 45380.345,
+                                "startTime": 48533.637365,
+                                "endTime": 48534.547566,
+                                "responseReceivedTime": 48534.229846,
                                 "transferSize": 31350
                               },
                               "children": {}
                             },
-                            "11137.57": {
+                            "28671.57": {
                               "request": {
                                 "url": "https://fonts.googleapis.com/css?family=Raleway:700,400",
-                                "startTime": 45379.751722,
-                                "endTime": 45380.337508,
-                                "responseReceivedTime": 45380.337169,
+                                "startTime": 48533.637808,
+                                "endTime": 48534.222026,
+                                "responseReceivedTime": 48534.221704,
                                 "transferSize": 553
-                              },
-                              "children": {}
-                            },
-                            "11137.62": {
-                              "request": {
-                                "url": "https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2",
-                                "startTime": 45380.682251,
-                                "endTime": 45381.378259,
-                                "responseReceivedTime": 45381.250455,
-                                "transferSize": 13388
-                              },
-                              "children": {}
-                            },
-                            "11137.64": {
-                              "request": {
-                                "url": "https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2",
-                                "startTime": 45380.688803,
-                                "endTime": 45381.394689,
-                                "responseReceivedTime": 45381.266837,
-                                "transferSize": 12998
-                              },
-                              "children": {}
-                            },
-                            "11137.58": {
-                              "request": {
-                                "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0",
-                                "startTime": 45380.69912,
-                                "endTime": 45381.284424,
-                                "responseReceivedTime": 45381.282678,
-                                "transferSize": 406
-                              },
-                              "children": {}
-                            },
-                            "11137.59": {
-                              "request": {
-                                "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
-                                "startTime": 45381.285412,
-                                "endTime": 45381.857035,
-                                "responseReceivedTime": 45381.855108,
-                                "transferSize": 406
-                              },
-                              "children": {}
-                            },
-                            "11137.60": {
-                              "request": {
-                                "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
-                                "startTime": 45381.858377,
-                                "endTime": 45382.428792,
-                                "responseReceivedTime": 45382.426749,
-                                "transferSize": 406
                               },
                               "children": {}
                             }
@@ -7850,11 +7412,31 @@
                       }
                     }
                   }
+                },
+                "28671.59": {
+                  "request": {
+                    "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0",
+                    "startTime": 48535.511119,
+                    "endTime": 48536.082865,
+                    "responseReceivedTime": 48536.081105,
+                    "transferSize": 406
+                  },
+                  "children": {}
+                },
+                "28671.60": {
+                  "request": {
+                    "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0",
+                    "startTime": 48536.083627,
+                    "endTime": 48536.655151,
+                    "responseReceivedTime": 48536.65374,
+                    "transferSize": 406
+                  },
+                  "children": {}
                 }
               },
               "longestChain": {
-                "duration": 9309.266999996908,
-                "length": 4,
+                "duration": 9652.429000001575,
+                "length": 1,
                 "transferSize": 406
               }
             }
@@ -7918,56 +7500,56 @@
             "helpText": "This is what the load of your site looked like.",
             "details": {
               "type": "filmstrip",
-              "scale": 9723,
+              "scale": 27654,
               "items": [
                 {
-                  "timing": 972,
-                  "timestamp": 45374089361.99999,
+                  "timing": 2765,
+                  "timestamp": 48529766368.99999,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 1945,
-                  "timestamp": 45375061662,
+                  "timing": 5531,
+                  "timestamp": 48532531768.99999,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 2917,
-                  "timestamp": 45376033962,
+                  "timing": 8296,
+                  "timestamp": 48535297169,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 3889,
-                  "timestamp": 45377006262,
+                  "timing": 11062,
+                  "timestamp": 48538062569,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 4862,
-                  "timestamp": 45377978562,
+                  "timing": 13827,
+                  "timestamp": 48540827969,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 5834,
-                  "timestamp": 45378950861.99999,
+                  "timing": 16592,
+                  "timestamp": 48543593368.99999,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 6806,
-                  "timestamp": 45379923162,
+                  "timing": 19358,
+                  "timestamp": 48546358768.99999,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 7778,
-                  "timestamp": 45380895462,
+                  "timing": 22123,
+                  "timestamp": 48549124169,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 8751,
-                  "timestamp": 45381867762,
+                  "timing": 24889,
+                  "timestamp": 48551889569,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z"
                 },
                 {
-                  "timing": 9723,
-                  "timestamp": 45382840062,
+                  "timing": 27654,
+                  "timestamp": 48554654969,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAGoAPAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APv3xl4i8Zaf4q1ODTrbUptNCKLY2torKrlFOSxibcN27IyD7jFAHb+BLrVL3wrZTaysi6k+/wA0TRCNvvsFyoAx8uO1AG/QAUAFAHBeNb7xNB4jgh0uS8h06S3jzLbWaTokhlw7NlS2BHzgdTigDnNU1vxzDfKti2sT2wllV2k02EZQOfLZTs5ym3IKrgg+vAB6Z4Zlvp9AspNSV1vmjzKJFCtntkDgHGMgUAalABQBTa6uV1IwCzJtPKD/AGoSL9/ONm3r05zVpK17kttPRFWTVr6O/ki/se4a0VMi5WWL5mwDgJuzjtn1HTGDVRjF/aE5NdBtxqupQ6hJEmjSz2iJIwnSeMM5CoVVVJHLFnX5iACnJwwNEVSlC/Pr2s/Pr933kylNOyj+RpWk73EAkkge2ckgxyFSRgkZ+Ukc9Rz0PODxUSSTsnc0TurtE1SMKACgDnvEWuXem6vpFnbXejxS38jRx2uoXDRTXG2N3fyQM7ioCsRg/KGzjg0AR6hq2t291m3XRGskDrLJcXzxuG+TBwIyBx5mQT/d560AR3Gp+ILW9s/Mk0FLLfOLkyXEiSEDeYgnGAcL82fRiOmKAKUt742A2LP4XS4QXDSxM852AxH7Nzwf9YGLkgfJ93kUAOfU/FkWuxWZuPDTrLaLNFbmaWO4lZWhEzBcN+7G6XBGcFogepy7O1yuVtc1tDq9NN2bCA34hW92DzhbsWj3d9pIBx6ZpElmgAoAzr3Q7O+1G01GWys5dSsklWzvJ7dXltvMAD7G6qGCgMARuAGelAE1zBdSw4ilgWTcx3Swl16HZwGHIO0nnnB6ZBAAwWlzHbmOKW2QkyE5tztJZsg4DjsTn1Jzx0oAilsb17i3kE1kNkheQtaMzMOQNp8wbTtJGTnqeADigCFtJuf7Wi1Epp01ygMImNqUmWBnyyCTcfRDjGCU7ZBV3drDu7ct9DUtlmWLFxIkkmT80aFFxngYJPbHfn26UhEtACY9zQAbfc0AG33NABt9zQAbfc0AG33NABt9zQAAYoA5vVvAXhy/vrzVb+xRriZVM9xJM6/Khjdf4sKFMMbDGMEE9WbIBR1LwhY22pWH2bR7SWy+Z726m1GWGSBVSPy2CgN5vMEI+Zl2hCQSflIBWl+GugQrFHH4b0orHFJbQNLcuGZGEm5SdpJyJZSeT1J7ZoAvQ/DvRrO/uryDSIop7oLFNIl3KpMQYMFAHCr8ifIMDA29ByAVdQ+HuixtPcJpFlLCt2NQLTXssamYIUdpOoICqFwQRhnGOTuAHy+HLWTXtPt/+EXsZIIYPt/9oG4Um2ukMSRRqMb8Msf3wAMQgEcgUtbl2jyXvrfby11v+luot98K/B95owtbzRrWGzTzJnSKV4lUuQzkspBIyAcnptUjGBhkHUaZpNlo8MkNnAkCSSvO4X+KR2LMxJ6kk5oAkksbWW5S4eCJrhDlZWUFlOGHB7cMw+jH1NAELaNpzLKDZW5EoRZB5a/OEOUB9Qvb07UALLo+nTvK0tlbStKQZGeJWLkFSCcjnGxMem0egoAWLSbC3ed4rS3ie4IMzJGFMhHALY6/jQBZ2oSCcEg5GecHp/WgCtcaVY3ayrPaW8wmBWQSRq28EAENnrkKvX+6PQUASyWltLOJnhieYLsEjKCwXIOM+mQDj2FAC2trBZQiK3ijgiHRI1CgfgKAJqAK01zNFcBFtXliKFvNRlwGB+6QSDznjGehzjjIBVsdVurtVaXR7uyyqNsneEsCXZSDsdh8oAbgnhhjJBFADl1S4N08J0q8WNQMTlotj5crgDfu4A3cgcEYy3y0ARy6xdxq5XRL6QqsrAK8A3FSQqjMnVwMrnAwRuKnigCtZ6/qU97NDN4av7WFJCqXDTW7LIuGO7CyEgHAGCM/MPcgA1rK7+2weYYZbc72Ty5gA3ysRnr0OMj2IoAsUAQXE00UkAitzMrsRIwYDyxtJB565IAx757UAZmraPbalcWWozWl295YGUQLb3TQth1KNkLIFcFeQGzghWwGUEAD7izlurqVhbzoNv3jfPGrENgAKhOOBnPHVeCc4AIIXv5r4Je6XNGiMrx3FpflozjA+dSUP8RONrAhT3wCAE+j29rfXep2uk5vbsR/apLabyp5vL+VASCAwVXf7zDoBz2AIl0v7V4ls9Taz1K3ktrebT1D3SeU0TsrGQqHJJzAgDcNiTkddoXz+44WXfZX+/e3lsXba+u4FghfSbrGNhcTxyBcAclmfcQc8E/McHIHGQg04mZ40ZkMbEAlCQSp9OKAKH/CS6R/0FbL/wACE/xp2YB/wkukf9BWy/8AAhP8aLMA/wCEl0j/AKCtl/4EJ/jRZgY17aeEdRffc3VlK4dpFc3vzIzAglTuyvUnAxzz15oswLun33hzSzKbW+sImlIMjfaVLNgYGSTnAHQdu1FmBc/4SXSP+grZf+BCf40WYB/wkukf9BWy/wDAhP8AGizAP+El0j/oK2X/AIEJ/jRZgfgJmu0yDNABmgAzQAZoAM0AGaADNACUgCgAoEX9Hn06C7B1WzuLy12t+7tbkQSbtjBTuKOMBipIxkgEArnILMZDqX2X+0Lr7CZDZea3kGVdr+Xk7dw3Ng4xkZP1PWgCtQAUAFABQAUAfRP7HHiLxJ4b1rxZP4b+HsPjuWTTglw8jpG1imSQwkYjaGPXB/hB521+dcX4Ghi6dN1ZR0U1yzhOa5XyqU0oNNOGijLo5OzTaZ62X4+GCcnNPWz91pPS+jun7rvr6I8TkmuEur6dtBhQG4lVovJlEcDsGXywu7jYWyA2TlRnIyD9/Sio04pS5tFrvfzv1v3PLk+aTdrFPV7S9Ro7u6097GK6zJEfIMcbg4b5M8EYZenYitiTOoAKACgAoAKAPo39inU7yy8YeKILe7nggn0hhLFFIyrJiVANwBweGPX1PrX5lx3OVLDUJ03Z3krrR2cdV6OyutnZdjKZ8/x6zqEVy1yl9cpcl2kMyzMHLNjc2c5ycDJ74r9NcYwtGKsjUhub24u9vnzyzY5HmOWxwB39gB+ApICCmAUAFAH/2Q=="
                 }
               ]
@@ -7977,7 +7559,7 @@
         }
       ],
       "id": "performance",
-      "score": 44.23529411764706
+      "score": 5.9411764705882355
     },
     {
       "name": "Accessibility",
@@ -9774,15 +9356,15 @@
                   },
                   {
                     "protocol": "http/1.1",
+                    "url": "https://www.glegoux.com/static/icon/favicon.ico"
+                  },
+                  {
+                    "protocol": "http/1.1",
                     "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0"
                   },
                   {
                     "protocol": "http/1.1",
                     "url": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0"
-                  },
-                  {
-                    "protocol": "http/1.1",
-                    "url": "https://www.glegoux.com/static/icon/favicon.ico"
                   }
                 ]
               }
@@ -10061,6 +9643,16 @@
                 [
                   {
                     "type": "url",
+                    "text": "https://www.glegoux.com/static/icon/favicon.ico"
+                  },
+                  {
+                    "type": "text",
+                    "text": "http/1.1"
+                  }
+                ],
+                [
+                  {
+                    "type": "url",
                     "text": "https://www.glegoux.com/static/fonts/fontawesome-webfont.woff?v=4.7.0"
                   },
                   {
@@ -10072,16 +9664,6 @@
                   {
                     "type": "url",
                     "text": "https://www.glegoux.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0"
-                  },
-                  {
-                    "type": "text",
-                    "text": "http/1.1"
-                  }
-                ],
-                [
-                  {
-                    "type": "url",
-                    "text": "https://www.glegoux.com/static/icon/favicon.ico"
                   },
                   {
                     "type": "text",
@@ -10107,7 +9689,7 @@
                   "source": "violation",
                   "level": "verbose",
                   "text": "Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive.",
-                  "timestamp": 1502839181404.12,
+                  "timestamp": 1502842335280.85,
                   "url": "https://www.glegoux.com/static/js/jquery.min.js",
                   "lineNumber": 2,
                   "stackTrace": {
@@ -10253,7 +9835,7 @@
                   "source": "violation",
                   "level": "verbose",
                   "text": "Added non-passive event listener to a scroll-blocking 'touchmove' event. Consider marking event handler as 'passive' to make the page more responsive.",
-                  "timestamp": 1502839181409.02,
+                  "timestamp": 1502842335284.98,
                   "url": "https://www.glegoux.com/static/js/jquery.min.js",
                   "lineNumber": 2,
                   "stackTrace": {
@@ -10399,7 +9981,7 @@
                   "source": "violation",
                   "level": "verbose",
                   "text": "Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive.",
-                  "timestamp": 1502839181430.11,
+                  "timestamp": 1502842335306.03,
                   "url": "https://www.glegoux.com/static/js/jquery.min.js",
                   "lineNumber": 2,
                   "stackTrace": {
@@ -10545,7 +10127,7 @@
                   "source": "violation",
                   "level": "verbose",
                   "text": "Added non-passive event listener to a scroll-blocking 'touchmove' event. Consider marking event handler as 'passive' to make the page more responsive.",
-                  "timestamp": 1502839181431.16,
+                  "timestamp": 1502842335306.48,
                   "url": "https://www.glegoux.com/static/js/jquery.min.js",
                   "lineNumber": 2,
                   "stackTrace": {
@@ -11088,6 +10670,6 @@
     }
   },
   "timing": {
-    "total": 19789
+    "total": 35044
   }
 }
