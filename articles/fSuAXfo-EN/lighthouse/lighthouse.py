@@ -12,6 +12,8 @@ from urllib.parse import urlparse
 from collections import OrderedDict
 
 import pandas as pd
+import matplotlib.pyplot as plt
+import pylab
 
 
 class ShellError(Exception):
@@ -22,7 +24,8 @@ def execute_lighthouse(url):
     o = urlparse(url)
     report_name = o.path[1:].replace('/', '--')
     hostname = o.hostname
-    cmd = ['lighthouse {} --output=json --output-path=./{}--{}.json'.format(
+    cmd = ['lighthouse {} '
+           '--output=json --output-path=./reports/{}--{}.json'.format(
                 url,
                 hostname,
                 report_name
@@ -68,14 +71,26 @@ def compute_score(report_filename):
     return score
 
 
+def show_aggregated_reports(csv_filename):
+    df = pd.read_csv(csv_filename)
+    df.plot.line(x='url', style='-o', legend=True)
+    plt.xlabel('')
+    pylab.ylim([0, 100])
+    plt.xticks(rotation=90)
+    plt.yticks(rotation=90)
+    pylab.savefig("scores.png",
+                  additional_artists=[],
+                  bbox_inches="tight")
+
+
 if __name__ == "__main__":
     import sys
-    import os
+    import glob
 
     args = sys.argv[1:]
     urls_filename = args[0]
     csv_filename = args[1]
 
     get_reports(urls_filename)
-    report_filenames = [f for f in os.listdir('.') if f.endswith('.json')]
+    report_filenames = glob.glob('./reports/*.json')
     df = aggregate_reports(report_filenames, csv_filename)
