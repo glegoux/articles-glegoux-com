@@ -28,7 +28,6 @@ ping_ttl() {
     if [[ ${is_excedeed} -eq 0 ]]; then
       return 1
     fi
-    return 2
   fi  
   return 2
 }
