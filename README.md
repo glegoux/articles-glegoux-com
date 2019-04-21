@@ -1,1 +1,1 @@
-Article of my personal blog: https://glegoux.com :smile:
+Articles of my personal blog: https://glegoux.com :smile:
