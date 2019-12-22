@@ -1,6 +1,6 @@
 Articles of my personal blog: https://glegoux.com :smile:
 
-Each folder in `articles` matches with an article `YYYY-MM-DD-<title>`. It should contain at most:
+Each folder in `articles/` matches with an article `YYYY-MM-DD-<title>`. It should contain at most:
 
 - **README.md**: contains a link with a online article
 - **images/**: contains the images of this article
