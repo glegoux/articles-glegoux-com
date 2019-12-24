@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Geolocalisation Request Path</title>
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          mapTypeId: 'terrain'
+        });
+
+        d3.csv("/route.csv", function(data) {
+
+          data.forEach(function(d, i) {
+            d.lat = +d.lat;
+            d.lng = +d.lng;
+            if (i === 0) {
+              map.setCenter({lat: d.lat, lng: d.lng});
+            }
+            var latlng = new google.maps.LatLng(d.lat, d.lng);
+            var marker = new google.maps.Marker({
+              position: latlng,
+              map: map,
+              icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + i + '|FF0000|000000' 
+            });
+          });
+
+          var path = new google.maps.Polyline({
+            path: data,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+          });
+
+          path.setMap(map);
+
+        });
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<API_TOKEN>&callback=initMap">
+    </script>
+  </body>
+</html>
