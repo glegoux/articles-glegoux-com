@@ -12,5 +12,5 @@ for url in $(cat urls.txt); do
   echo "$i ${url}" | tee -a matching_url_report.txt
   echo -n "--"
   lighthouse "${url}" --output=json --output-path="report-$i.json"
-  $((i++))
+  ((i++))
 done
