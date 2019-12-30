@@ -1,0 +1,6 @@
+0 https://glegoux.com/
+1 https://glegoux.com/blog/
+2 https://glegoux.com/blog/articles/
+3 https://glegoux.com/about/
+4 https://glegoux.com/contact/
+5 https://glegoux.com/contact/email/
