@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
-# Create skeleton file structure for an article from article_id with format
+# Create skeleton file structure for an article from article identifier with format
 # YYYY-MM-DD-<title> with <title> could only alphanumeric character in lowercase or dash
 # respecting the regex ^[a-z0-9\-]{3,}$.
 #
-# usage: ./create-empty-article YYYY-MM-DD-<title>
+# usage: ./create-skeleton-article YYYY-MM-DD-<title>
 
 set -e
 
@@ -41,3 +41,8 @@ for folder in "images" "references" "code"; do
 done
 
 echo "Article: ${url}" > "README.md"
+
+git add "${article_id}"
+git commit -m "Add new article skeleton ${article_id}"
+git pull
+git push
