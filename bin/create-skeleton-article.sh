@@ -42,7 +42,7 @@ done
 
 echo "Article: ${url}" > "README.md"
 
-git add "${article_id}"
+git add "../${article_id}"
 git commit -m "Add new article skeleton ${article_id}"
 git pull
 git push
