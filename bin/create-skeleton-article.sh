@@ -4,14 +4,19 @@
 # YYYY-MM-DD-<title> with <title> could only alphanumeric character in lowercase or dash
 # respecting the regex ^[a-z0-9\-]{3,}$.
 #
-# usage: ./create-skeleton-article YYYY-MM-DD-<title>
+# usage: ./create-skeleton-article YYYY-MM-DD-<title> [<is_draft>]
 
 set -e
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
 article_id="$1"
-blog_base_url="https://glegoux.com/blog/articles"
+is_draft="${2:-true}"
+if [[ "${is_draft}" == "true" ]]; then
+  blog_base_url="http://localhost:4000/blog/articles"
+else
+  blog_base_url="https://glegoux.com/blog/articles"
+fi
 
 date_publication="$(echo "${article_id}" | cut -f1-3 -d-)"
 title="$(echo "${article_id}" | cut -f4- -d-)"
@@ -32,7 +37,11 @@ if ! curl --output /dev/null --silent --head --fail --retry 0 --connect-timeout 
   exit 1
 fi
 
-cd "./articles"
+if [[ "${is_draft}" == "true" ]]; then
+  cd "./drafts"
+else
+  cd "./articles"
+fi
 mkdir -p "${article_id}"
 cd "./${article_id}"
 for folder in "images" "references" "code"; do
