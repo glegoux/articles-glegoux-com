@@ -11,7 +11,7 @@ set -e
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
 article_id="$1"
-is_draft="${2:-true}"
+is_draft="${2:-false}"
 if [[ "${is_draft}" == "true" ]]; then
   blog_base_url="http://localhost:4000/blog/articles"
 else
